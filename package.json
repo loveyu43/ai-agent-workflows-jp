@@ -1,0 +1,23 @@
+{
+  "name": "ai-agent-workflows-jp",
+  "version": "0.1.0",
+  "description": "Japanese workflow templates, safety checklists, and evaluation samples for AI agents and MCP-enabled business tools.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "validate:dataset": "node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jsonl"
+  },
+  "keywords": [
+    "ai-agent",
+    "codex",
+    "claude-code",
+    "mcp",
+    "japanese",
+    "workflow-template"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
+

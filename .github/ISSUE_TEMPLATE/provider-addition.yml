@@ -1,0 +1,28 @@
+name: Provider addition
+description: Suggest a Japanese MCP or AI-agent provider note
+title: "Provider: "
+labels:
+  - provider
+body:
+  - type: input
+    id: provider
+    attributes:
+      label: Provider name
+      description: Name of the service, MCP server, CLI, or integration.
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official URL
+      description: Prefer an official announcement, docs page, or repository.
+    validations:
+      required: true
+  - type: textarea
+    id: safe_use
+    attributes:
+      label: Safe usage notes
+      description: What should users verify before allowing an AI agent to use it?
+    validations:
+      required: true
+

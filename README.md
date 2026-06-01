@@ -63,6 +63,8 @@ node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jso
 
 This project is designed to be a real public OSS artifact, not a placeholder repository. It contains reusable docs, templates, a dataset, validation scripts, tests, contribution guidance, and a maintenance roadmap.
 
+Current public project link: https://github.com/bw-bit/codex/tree/main/ai-agent-workflows-jp
+
 Current public program notes are summarized in [docs/oss-programs/codex-and-claude-oss-notes.md](docs/oss-programs/codex-and-claude-oss-notes.md).
 
 Important: no repository can guarantee approval. OpenAI says it reviews active OSS projects for usage, ecosystem importance, and maintenance evidence. Anthropic's Claude for Open Source page currently names a much higher bar for maintainers, including 5,000 GitHub stars or 1M monthly npm downloads, while also allowing applicants to explain ecosystem importance.
@@ -70,4 +72,3 @@ Important: no repository can guarantee approval. OpenAI says it reviews active O
 ## License
 
 MIT. See [LICENSE](LICENSE).
-

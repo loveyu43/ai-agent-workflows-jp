@@ -16,6 +16,24 @@ AIエージェントは、サーバー操作、WordPress保守、会計、請求
 - 研修や導入支援で使える説明資料
 - Codex、Claude Code、Cursorなどの比較評価に使える日本語タスクデータ
 
+## Why This Matters
+
+Japan has a growing set of MCP-enabled and API-driven business tools, but practical Japanese-language guidance for safe agent operation is still scattered across announcements, product docs, and individual blog posts. This project turns those signals into reusable OSS assets: provider catalogs, risk boundaries, workflow templates, and validation data that small teams can adapt without starting from a blank prompt.
+
+The project focuses on workflows where mistakes are costly: accounting, HR, contracts, customer communication, server operations, CRM updates, and SEO/content operations. Each template separates read-only research, draft generation, human approval, and write actions so maintainers and operators can adopt AI agents without normalizing unsafe automation.
+
+## Maintenance Signals
+
+- Public, standalone repository with MIT license and contribution guidance.
+- Source-backed provider catalog with `last_checked` dates.
+- JSONL validation scripts and `node:test` coverage.
+- Security policy and approval-boundary documentation.
+- Roadmap and issue-driven maintenance plan for expanding providers, datasets, and workflows.
+
+## Codex / API Credit Use
+
+If selected for OSS support, credits would be used for maintaining this repository: reviewing provider updates, generating and checking Japanese workflow templates, expanding evaluation samples, validating unsafe-action wording, drafting release notes, and testing Codex/Claude Code/Cursor workflows against the dataset.
+
 ## Current Coverage
 
 - XServer MCP Server / XServer CLI

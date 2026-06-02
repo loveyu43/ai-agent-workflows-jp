@@ -20,20 +20,31 @@ AIエージェントは、サーバー操作、WordPress保守、会計、請求
 
 - XServer MCP Server / XServer CLI
 - freee-mcp
+- Money Forward Cloud Accounting MCP
+- kintone MCP Server / Garoon MCP Server
+- Sansan / Contract One MCP Server notes
+- Rakko Keyword MCP / API and agent-friendly Japanese API catalog
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
-- WordPress保守、バックオフィス、SNS運用の安全テンプレート
+- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応の安全テンプレート
 - 日本語AIエージェント評価データ 10件
+- 日本企業MCP/APIプロバイダーカタログ 23件
 
 ## Repository Map
 
 ```text
 docs/
+  api-providers-jp/           MCP以外も含む日本企業API情報
   beginner/                  初心者向け解説
+  catalog/                    日本企業MCP/API/AIエージェント索引
   mcp-providers-jp/           日本企業・日本語利用者向けMCP情報
+  safety/                     承認境界とリスク整理
   usecases/                   業務ユースケース
   oss-programs/               OSS申請向けの整理
+data/
+  japan-agent-providers.jsonl  日本企業MCP/APIカタログ
 templates/
+  business-ja/                実務向け日本語AIエージェント指示テンプレート
   codex/                      Codex向け作業指示テンプレート
   claude-code/                Claude Code向け作業指示テンプレート
   security/                   安全確認チェックリスト
@@ -41,8 +52,10 @@ datasets/
   japanese-agent-evaluation-samples.jsonl
 scripts/
   validate-dataset.mjs
+  validate-provider-catalog.mjs
 tests/
   validate-dataset.test.mjs
+  validate-provider-catalog.test.mjs
 ```
 
 ## Quick Start
@@ -50,6 +63,7 @@ tests/
 ```bash
 npm test
 npm run validate:dataset
+npm run validate:providers
 ```
 
 If `npm` is not available but Node.js is installed:
@@ -57,7 +71,16 @@ If `npm` is not available but Node.js is installed:
 ```bash
 node --test tests/*.test.mjs
 node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jsonl
+node scripts/validate-provider-catalog.mjs data/japan-agent-providers.jsonl
 ```
+
+## Japanese Provider Catalog
+
+- [日本企業 AIエージェント / MCP ワークフロー索引](docs/catalog/japan-ai-agent-workflow-index.md)
+- [AIエージェントと相性が良い日本企業API一覧](docs/api-providers-jp/agent-friendly-api-index.md)
+- [AIエージェント業務承認境界マトリクス](docs/safety/approval-boundary-matrix.md)
+
+Machine-readable provider records live in [data/japan-agent-providers.jsonl](data/japan-agent-providers.jsonl).
 
 ## For Maintainers Applying To OSS Programs
 

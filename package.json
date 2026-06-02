@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "validate:dataset": "node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jsonl"
+    "validate": "npm run validate:dataset && npm run validate:providers",
+    "validate:dataset": "node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jsonl",
+    "validate:providers": "node scripts/validate-provider-catalog.mjs data/japan-agent-providers.jsonl"
   },
   "keywords": [
     "ai-agent",
@@ -20,4 +22,3 @@
     "node": ">=20"
   }
 }
-

@@ -86,7 +86,7 @@ Machine-readable provider records live in [data/japan-agent-providers.jsonl](dat
 
 This project is designed to be a real public OSS artifact, not a placeholder repository. It contains reusable docs, templates, a dataset, validation scripts, tests, contribution guidance, and a maintenance roadmap.
 
-Current public project link: https://github.com/bw-bit/codex/tree/main/ai-agent-workflows-jp
+Target public project link: https://github.com/bw-bit/ai-agent-workflows-jp
 
 Current public program notes are summarized in [docs/oss-programs/codex-and-claude-oss-notes.md](docs/oss-programs/codex-and-claude-oss-notes.md).
 

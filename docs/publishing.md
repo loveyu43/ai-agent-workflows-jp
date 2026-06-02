@@ -35,24 +35,15 @@ git push -u origin main
 
 ## Application Link
 
-Standalone target after creating a dedicated repository:
+Standalone target after creating the dedicated repository:
 
 ```text
 https://github.com/bw-bit/ai-agent-workflows-jp
 ```
 
-Current public project link:
+Use this link for OSS program applications after the repository exists.
 
-```text
-https://github.com/bw-bit/codex/tree/main/ai-agent-workflows-jp
-```
-
-Published commits:
-
-```text
-https://github.com/bw-bit/codex/commit/9608a07c6c68d3959616e865c25abca227287370
-https://github.com/bw-bit/codex/commit/d72f0e89b2bef68f1c50fbcdf05ae4d936a5528a
-```
+Do not use a forked or unrelated repository subdirectory as the application link.
 
 ## Before Applying
 

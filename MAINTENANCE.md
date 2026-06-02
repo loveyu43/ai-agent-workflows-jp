@@ -2,9 +2,9 @@
 
 This project is maintained as a Japanese-first OSS knowledge base for safe AI agent workflows.
 
-## Current Public Location
+## Target Public Location
 
-https://github.com/bw-bit/codex/tree/main/ai-agent-workflows-jp
+https://github.com/bw-bit/ai-agent-workflows-jp
 
 ## Maintainer Duties
 
@@ -12,7 +12,7 @@ https://github.com/bw-bit/codex/tree/main/ai-agent-workflows-jp
 - Review templates for unsafe automation wording.
 - Keep dataset records valid with `npm run validate:dataset`.
 - Prefer practical workflows over news-only summaries.
-- Move to a dedicated `bw-bit/ai-agent-workflows-jp` repository when repository creation access is available.
+- Keep the project in the dedicated `bw-bit/ai-agent-workflows-jp` repository, not as a subdirectory of an unrelated fork.
 
 ## Planned Issues
 
@@ -34,12 +34,11 @@ Done when:
 - Each task has expected behavior and risk level.
 - `npm run validate:dataset` passes.
 
-### Prepare Dedicated Repository Migration
+### Prepare Dedicated Repository Release
 
 Prepare the project for a dedicated `bw-bit/ai-agent-workflows-jp` repository.
 
 Done when:
 - Release checklist exists.
-- Migration steps from the current public subdirectory are documented.
+- Repository creation and first push steps are documented.
 - v0.1.0 tag/release guidance is clear.
-

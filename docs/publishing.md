@@ -3,7 +3,7 @@
 Target repository name:
 
 ```text
-bw-bit/ai-agent-workflows-jp
+loveyu43/ai-agent-workflows-jp
 ```
 
 ## Option A: GitHub CLI
@@ -11,7 +11,7 @@ bw-bit/ai-agent-workflows-jp
 Use this when `gh` is installed and authenticated.
 
 ```bash
-gh repo create bw-bit/ai-agent-workflows-jp \
+gh repo create loveyu43/ai-agent-workflows-jp \
   --public \
   --description "Japanese workflow templates, safety checklists, and evaluation samples for AI agents and MCP-enabled business tools." \
   --source . \
@@ -29,7 +29,7 @@ gh repo create bw-bit/ai-agent-workflows-jp \
 6. Run:
 
 ```bash
-git remote add origin https://github.com/bw-bit/ai-agent-workflows-jp.git
+git remote add origin https://github.com/loveyu43/ai-agent-workflows-jp.git
 git push -u origin main
 ```
 
@@ -38,7 +38,7 @@ git push -u origin main
 Standalone target after creating the dedicated repository:
 
 ```text
-https://github.com/bw-bit/ai-agent-workflows-jp
+https://github.com/loveyu43/ai-agent-workflows-jp
 ```
 
 Use this link for OSS program applications after the repository exists.

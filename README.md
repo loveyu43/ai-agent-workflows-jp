@@ -45,12 +45,17 @@ If selected for OSS support, credits would be used for maintaining this reposito
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
 - WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応の安全テンプレート
+- 実務向け日本語AIエージェント業務テンプレート 20件
 - 日本語AIエージェント評価データ 10件
 - 日本企業MCP/APIプロバイダーカタログ 23件
 
 ## Repository Map
 
 ```text
+.github/workflows/
+  ci.yml                       GitHub Actions validation workflow
+bin/
+  ai-agent-workflows-jp.mjs    CLI entrypoint for repository validators
 docs/
   api-providers-jp/           MCP以外も含む日本企業API情報
   beginner/                  初心者向け解説
@@ -61,6 +66,8 @@ docs/
   oss-programs/               OSS申請向けの整理
 data/
   japan-agent-providers.jsonl  日本企業MCP/APIカタログ
+examples/
+  *.md                         実行例と承認境界のサンプル
 templates/
   business-ja/                実務向け日本語AIエージェント指示テンプレート
   codex/                      Codex向け作業指示テンプレート
@@ -78,8 +85,16 @@ tests/
 
 ## Quick Start
 
+Run the full validation suite:
+
 ```bash
 npm test
+npm run validate
+```
+
+Run individual validators:
+
+```bash
 npm run validate:dataset
 npm run validate:providers
 ```
@@ -88,8 +103,21 @@ If `npm` is not available but Node.js is installed:
 
 ```bash
 node --test tests/*.test.mjs
-node scripts/validate-dataset.mjs datasets/japanese-agent-evaluation-samples.jsonl
-node scripts/validate-provider-catalog.mjs data/japan-agent-providers.jsonl
+node bin/ai-agent-workflows-jp.mjs validate
+node bin/ai-agent-workflows-jp.mjs validate:dataset datasets/japanese-agent-evaluation-samples.jsonl
+node bin/ai-agent-workflows-jp.mjs validate:providers data/japan-agent-providers.jsonl
+```
+
+Run directly from GitHub with `npx`:
+
+```bash
+npx github:loveyu43/ai-agent-workflows-jp validate
+```
+
+After npm publication, the same command shape can be used as:
+
+```bash
+npx ai-agent-workflows-jp validate
 ```
 
 ## Japanese Provider Catalog
@@ -100,6 +128,12 @@ node scripts/validate-provider-catalog.mjs data/japan-agent-providers.jsonl
 
 Machine-readable provider records live in [data/japan-agent-providers.jsonl](data/japan-agent-providers.jsonl).
 
+## Examples
+
+- [Chatwork support triage](examples/chatwork-support-triage-example.md)
+- [MCP provider catalog validation](examples/mcp-provider-catalog-validation-example.md)
+- [WordPress maintenance read-only check](examples/wordpress-maintenance-readonly-example.md)
+
 ## For Maintainers Applying To OSS Programs
 
 This project is designed to be a real public OSS artifact, not a placeholder repository. It contains reusable docs, templates, a dataset, validation scripts, tests, contribution guidance, and a maintenance roadmap.
@@ -109,6 +143,26 @@ Target public project link: https://github.com/loveyu43/ai-agent-workflows-jp
 Current public program notes are summarized in [docs/oss-programs/codex-and-claude-oss-notes.md](docs/oss-programs/codex-and-claude-oss-notes.md).
 
 Important: no repository can guarantee approval. OpenAI says it reviews active OSS projects for usage, ecosystem importance, and maintenance evidence. Anthropic's Claude for Open Source page currently names a much higher bar for maintainers, including 5,000 GitHub stars or 1M monthly npm downloads, while also allowing applicants to explain ecosystem importance.
+
+### Application Copy
+
+Maintainer role:
+
+```text
+I am the primary maintainer of AI Agent Workflows JP, a public MIT-licensed repository for Japanese AI-agent business workflow templates, MCP/API provider notes, safety checklists, validation scripts, and evaluation samples.
+```
+
+Why this repository qualifies:
+
+```text
+This repository helps Japanese small businesses and non-engineer operators adopt Codex, Claude Code, MCP servers, and agent-friendly APIs safely. It turns scattered provider announcements and operational patterns into reusable OSS assets with human-approval boundaries for accounting, HR, contracts, support, WordPress, CRM, SEO, and infrastructure work.
+```
+
+How API credits would be used:
+
+```text
+Credits would support ongoing OSS maintenance: reviewing provider updates, expanding Japanese workflow templates, checking unsafe-action wording, generating evaluation samples, validating MCP/API catalog entries, drafting release notes, and testing Codex/Claude Code workflows against the repository's dataset and examples.
+```
 
 ## License
 

@@ -22,14 +22,24 @@ This repository should not claim automatic eligibility. It should claim:
 
 - It is a real OSS project with reusable artifacts.
 - It targets Japanese AI agent adoption and safety, which is under-served.
-- It has maintainable structure, tests, contribution rules, and a public roadmap.
+- It has maintainable structure, a package CLI, GitHub Actions CI, tests, contribution rules, examples, and a public roadmap.
+- It has a public v0.1.0 release and issue-driven maintenance plan.
 - It needs public usage, issues, external contributions, and releases to become stronger for strict programs.
+
+## Current Evidence To Cite
+
+- Public repository: https://github.com/loveyu43/ai-agent-workflows-jp
+- Release: https://github.com/loveyu43/ai-agent-workflows-jp/releases/tag/v0.1.0
+- Business templates: 20 Japanese workflow templates under `templates/business-ja/`
+- Provider catalog: 23 Japanese MCP/API provider records under `data/japan-agent-providers.jsonl`
+- Validation: `npm test` and `npm run validate`
+- CI: `.github/workflows/ci.yml`
+- Examples: `examples/`
 
 ## Suggested 500-Character OpenAI Answer
 
-Primary maintainer of a Japanese OSS knowledge base and template set for safe AI agent workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, XServer, and freee with human approval checkpoints. The repo includes docs, templates, safety checklists, evaluation JSONL, validation scripts, and tests. It targets an under-served Japanese adoption gap.
+Primary maintainer of AI Agent Workflows JP, a Japanese OSS template and validation project for safe AI-agent business workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, and Japanese APIs with human approval checkpoints. The repo includes 20 templates, 23 provider records, examples, safety docs, JSONL evaluation data, CLI validation, CI, release, and roadmap issues.
 
 ## Suggested API Credits Answer
 
-Use API credits to maintain and test Japanese AI agent workflow templates: generate draft checks, validate safety language, compare agent behavior on JSONL evaluation tasks, triage issues, and automate release notes while preserving human review for high-risk workflows.
-
+Use API credits to maintain and test Japanese AI-agent workflow templates: review provider changes, generate and check draft templates, validate unsafe-action wording, compare agent behavior on JSONL evaluation tasks, triage issues, test Codex/Claude Code examples, and draft release notes while preserving human review for high-risk workflows.

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 - 2026-06-02
+
+- Added installable `ai-agent-workflows-jp` CLI entrypoint for dataset and provider catalog validation.
+- Added GitHub Actions CI for tests and validation.
+- Expanded Japanese business workflow templates from 8 to 20.
+- Added runnable examples for Chatwork support triage, provider catalog validation, and WordPress read-only maintenance.
+- Added repository-structure tests for CLI, CI, examples, and template coverage.
+- Added OSS program application copy and current evidence checklist.
+
 ## 0.1.0 - 2026-06-02
 
 - Added source-backed Japanese MCP/API provider catalog in JSONL.

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.3 - 2026-06-03
+
+- Shortened README positioning to state whose problem the OSS solves.
+- Expanded Japanese agent evaluation samples from 13 to 30.
+- Expanded Japanese MCP/API provider catalog from 23 to 50.
+- Updated OSS application evidence, API index, catalog docs, and CLI count tests.
+
 ## 0.1.2 - 2026-06-03
 
 - Added student and early-stage startup workflow coverage.

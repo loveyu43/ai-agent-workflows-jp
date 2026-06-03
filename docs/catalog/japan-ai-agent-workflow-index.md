@@ -1,8 +1,10 @@
 # 日本企業 AIエージェント / MCP ワークフロー索引
 
-最終確認日: 2026-06-02
+最終確認日: 2026-06-03
 
 この索引は、日本企業が提供するMCP、AIエージェント基盤、またはAIエージェントから業務利用しやすいAPIを、業務テンプレートへ落とし込むための入口です。公式ページで確認できた情報を優先し、MCPではないAPIは「APIでエージェント化可能」として分けています。
+
+機械可読カタログは `data/japan-agent-providers.jsonl` に50件あります。
 
 ## 分類
 
@@ -42,6 +44,38 @@
 | LINEヤフー株式会社 | LINE Messaging API | 顧客対応、公式アカウント通知、チャットボット | ユーザー送信前の承認とログ保全が重要 | [LINE Developers](https://developers.line.biz/ja/services/messaging-api/) |
 | BASE株式会社 | BASE API | 受注確認、商品同期、EC問い合わせ対応 | 顧客情報・商品更新は高リスクとして扱う | [BASE API](https://docs.thebase.in/api/) |
 | Qiita株式会社 | Qiita API v2 | 技術記事検索、DevRel、Qiita Team文書 | 公開記事投稿は人間承認、検索・要約は低リスク | [Qiita API v2](https://qiita.com/api/v2/docs) |
+
+### 追加APIカバレッジ
+
+| 会社 | サービス | 主なワークフロー | エージェント化の向き | 公式情報 |
+| --- | --- | --- | --- | --- |
+| 弥生株式会社 | 弥生 API | 会計・請求データ棚卸し、月次確認 | 会計更新は承認ゲート必須 | [弥生 Developer](https://developer.yayoi-kk.co.jp/) |
+| メイクリープス株式会社 | MakeLeaps API | 見積・請求書下書き、取引先確認 | 書類送信前レビュー向き | [MakeLeaps Developers](https://developers.makeleaps.jp/) |
+| 弁護士ドットコム株式会社 | クラウドサイン Web API | 契約期限確認、署名状況棚卸し | 契約送信や法的判断は人間が行う | [クラウドサイン Developers](https://developers.cloudsign.jp/) |
+| GMOグローバルサイン・ホールディングス株式会社 | 電子印鑑GMOサイン API | 契約送信前チェック、署名状況確認 | 署名依頼送信は承認付き実行 | [GMOサイン Developers](https://developers.gmosign.com/) |
+| PayPay株式会社 | PayPay API | 決済状況確認、返金候補レビュー | 返金・取消は高リスク操作 | [PayPay for Developers](https://developer.paypay.ne.jp/) |
+| PAY株式会社 | PAY.JP API | 課金・サブスク確認、決済レポート | 決済操作は人間承認が前提 | [PAY.JP API](https://pay.jp/docs/api/) |
+| 株式会社DEGICA | KOMOJU API | 決済方法別レポート、EC決済確認 | 支払い変更は承認付き実行 | [KOMOJU Docs](https://docs.komoju.com/) |
+| STORES株式会社 | STORES API | 商品・注文確認、在庫補充候補 | 商品・在庫変更は高リスク | [STORES API](https://api.st.inc/doc/) |
+| GMOペパボ株式会社 | カラーミーショップ API | 商品同期、注文確認、問い合わせ下書き | EC更新と顧客連絡は承認必須 | [カラーミーショップ API](https://developer.shop-pro.jp/) |
+| LINEヤフー株式会社 | Yahoo!ショッピング API | 商品掲載確認、ストア運用レポート | 商品・価格更新は承認付き実行 | [Yahoo!ショッピング API](https://developer.yahoo.co.jp/webapi/shopping/) |
+| LINEヤフー株式会社 | Yahoo!広告 API | 広告レポート要約、改善案作成 | 予算・入札・公開変更は高リスク | [Yahoo!広告 API](https://ads-developers.yahoo.co.jp/ja/ads-api/) |
+| バリューコマース株式会社 | ValueCommerce API | アフィリエイト案件調査、成果レポート | 公開記事や提携申請は人間確認 | [ValueCommerce API](https://www.valuecommerce.ne.jp/api/) |
+| さくらインターネット株式会社 | さくらのクラウド API | サーバー棚卸し、費用確認、運用レポート | 読み取り中心から始める | [さくらのクラウド API](https://manual.sakura.ad.jp/cloud/api/) |
+| GMOインターネットグループ株式会社 | ConoHa API | VPS棚卸し、保守チェック | 停止・削除・課金操作は承認必須 | [ConoHa API](https://doc.conoha.jp/api-vps3/) |
+| 富士通クラウドテクノロジーズ株式会社 | NIFCLOUD API | クラウド資産棚卸し、設定確認 | インフラ変更は高リスク | [NIFCLOUD API](https://pfs.nifcloud.com/api/) |
+| 株式会社ソラコム | SORACOM API | IoT SIM利用量監視、異常候補抽出 | 回線停止・プラン変更は承認必須 | [SORACOM API](https://developers.soracom.io/en/api/) |
+| 株式会社ヒューマンテクノロジーズ | KING OF TIME Web API | 勤怠確認、締め前チェック | 勤怠修正や承認は人間判断 | [KING OF TIME API](https://developer.kingtime.jp/) |
+| 株式会社DONUTS | ジョブカン API | 勤怠・労務確認、承認前レビュー | 労務データ更新は高リスク | [ジョブカン API](https://ssl.jobcan.jp/docs/api/) |
+| 株式会社HERP | HERP API | 採用候補者整理、面接前ブリーフ | 合否判断や候補者連絡は人間承認 | [HERP Developers](https://developers.herp.cloud/) |
+| 株式会社マツリカ | Mazrica API | 商談整理、次アクション案、CRMレビュー | CRM更新は差分確認付き | [Mazrica API](https://developer.mazrica.com/) |
+| 株式会社プレイド | KARTE API | 施策候補、顧客体験分析、セグメント確認 | 配信・セグメント変更は承認必須 | [KARTE Developers](https://developers.karte.io/) |
+| 株式会社スマレジ | スマレジ・プラットフォームAPI | POS売上確認、在庫・店舗運用レポート | 商品・在庫変更は高リスク | [スマレジ Developers](https://developers.smaregi.dev/) |
+| 株式会社Zaim | Zaim API | 家計・支出レポート、予算レビュー | 個人データ外部共有は要確認 | [Zaim Developers](https://dev.zaim.net/) |
+| 株式会社JPX総研 | J-Quants API | 上場企業データ調査、非助言リサーチメモ | 売買推奨と誤認されない表現が必要 | [J-Quants](https://jpx-jquants.com/) |
+| 株式会社クレイ | DocBase API | ナレッジ検索、重複記事整理、社内文書下書き | 削除や公開範囲変更は承認必須 | [DocBase API](https://help.docbase.io/posts/45703) |
+| チャットプラス株式会社 | ChatPlus API | 問い合わせ一次分類、返信案、FAQ改善 | 顧客返信送信は人間確認 | [ChatPlus API](https://chatplus.jp/support/api/) |
+| 株式会社オープンロジ | オープンロジ API | 出荷確認、遅延候補抽出、顧客連絡下書き | 出荷変更や顧客連絡は承認付き実行 | [オープンロジ API](https://docs.openlogi.com/) |
 
 ## AIエージェント基盤
 

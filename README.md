@@ -1,8 +1,8 @@
 # AI Agent Workflows JP
 
-日本語圏の個人事業主、中小企業、非エンジニアの担当者が、Codex、Claude Code、MCP対応サービスを安全に業務へ取り入れるためのテンプレート集です。
+日本語圏の小規模事業者・非エンジニア担当者が、AIエージェントに「何を任せ、どこで人間が止めるか」を決めるためのOSSです。
 
-This project collects Japanese-first workflow templates, safety checklists, provider notes, and evaluation samples for AI coding agents and MCP-enabled business tools.
+Codex、Claude Code、MCP/API対応サービス向けに、日本語プロンプト、承認境界、事業者カタログ、評価データを提供します。
 
 ## Why This Exists
 
@@ -47,8 +47,8 @@ If selected for OSS support, credits would be used for maintaining this reposito
 - WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応の安全テンプレート
 - 学生、学生起業、初期スタートアップ向けの顧客検証、MVP/LP検証、GitHubポートフォリオレビュー
 - 実務向け日本語AIエージェント業務テンプレート 23件
-- 日本語AIエージェント評価データ 13件
-- 日本企業MCP/APIプロバイダーカタログ 23件
+- 日本語AIエージェント評価データ 30件
+- 日本企業MCP/APIプロバイダーカタログ 50件
 
 ## Repository Map
 

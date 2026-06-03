@@ -36,6 +36,8 @@ If selected for OSS support, credits would be used for maintaining this reposito
 
 ## Current Coverage
 
+Snapshot for reviewers: **23 templates / 50 provider records / 30 eval samples**.
+
 - XServer MCP Server / XServer CLI
 - freee-mcp
 - Money Forward Cloud Accounting MCP

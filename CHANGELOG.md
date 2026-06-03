@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 - 2026-06-03
+
+- Added student and early-stage startup workflow coverage.
+- Added customer discovery, MVP/LP validation, and GitHub portfolio review templates.
+- Added student/startup use case documentation and a customer discovery example.
+- Expanded Japanese agent evaluation samples from 10 to 13.
+- Updated repository-structure tests for the new template and example coverage.
+
 ## 0.1.1 - 2026-06-02
 
 - Added installable `ai-agent-workflows-jp` CLI entrypoint for dataset and provider catalog validation.

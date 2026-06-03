@@ -45,8 +45,9 @@ If selected for OSS support, credits would be used for maintaining this reposito
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
 - WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応の安全テンプレート
-- 実務向け日本語AIエージェント業務テンプレート 20件
-- 日本語AIエージェント評価データ 10件
+- 学生、学生起業、初期スタートアップ向けの顧客検証、MVP/LP検証、GitHubポートフォリオレビュー
+- 実務向け日本語AIエージェント業務テンプレート 23件
+- 日本語AIエージェント評価データ 13件
 - 日本企業MCP/APIプロバイダーカタログ 23件
 
 ## Repository Map
@@ -132,6 +133,7 @@ Machine-readable provider records live in [data/japan-agent-providers.jsonl](dat
 
 - [Chatwork support triage](examples/chatwork-support-triage-example.md)
 - [MCP provider catalog validation](examples/mcp-provider-catalog-validation-example.md)
+- [Startup customer discovery](examples/startup-customer-discovery-example.md)
 - [WordPress maintenance read-only check](examples/wordpress-maintenance-readonly-example.md)
 
 ## For Maintainers Applying To OSS Programs

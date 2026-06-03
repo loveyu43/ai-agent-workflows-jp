@@ -4,6 +4,7 @@
 
 - Add provider notes for Japanese MCP services beyond XServer and freee.
 - Add more evaluation tasks for WordPress, accounting, SNS, and local business operations.
+- Add more student, student-founder, and early-stage startup workflows.
 - Add examples of safe `AGENTS.md` and `CLAUDE.md` files for small teams.
 - Add a comparison worksheet for Codex, Claude Code, Cursor, and Claude Desktop.
 
@@ -20,4 +21,3 @@
 - Review risky templates before release.
 - Track issues from real Japanese users and small teams.
 - Prefer reusable, practical workflows over news summaries.
-

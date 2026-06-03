@@ -14,12 +14,12 @@ function listMarkdownFiles(directory) {
 }
 
 describe("public repository structure", () => {
-  it("contains at least 20 Japanese business workflow templates", () => {
+  it("contains at least 23 Japanese business workflow templates", () => {
     const templates = listMarkdownFiles("templates/business-ja");
 
     assert.ok(
-      templates.length >= 20,
-      `expected at least 20 business templates, found ${templates.length}`
+      templates.length >= 23,
+      `expected at least 23 business templates, found ${templates.length}`
     );
   });
 
@@ -28,6 +28,7 @@ describe("public repository structure", () => {
     const requiredExamples = [
       "chatwork-support-triage-example.md",
       "mcp-provider-catalog-validation-example.md",
+      "startup-customer-discovery-example.md",
       "wordpress-maintenance-readonly-example.md"
     ];
 

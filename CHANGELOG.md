@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.4 - 2026-06-14
+
+- Added fresh provider research for Tips MCP, microCMS MCP, LINE LIFF, L Message, エルグラム, kaonavi API, TimeRex Scheduling API, and HENNGE One API.
+- Expanded Japanese MCP/API provider catalog from 50 to 58.
+- Added workflow templates for Tips content sales, LINE webhook/LIFF safety, Instagram DM review, microCMS publishing, and kaonavi HR data review.
+- Expanded Japanese agent evaluation samples from 30 to 35.
+- Updated README, API index, and catalog docs with the new coverage counts and safety notes.
+
 ## 0.1.3 - 2026-06-03
 
 - Shortened README positioning to state whose problem the OSS solves.

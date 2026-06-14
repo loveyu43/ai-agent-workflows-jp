@@ -20,7 +20,7 @@ describe("package CLI", () => {
       { cwd: projectRoot, encoding: "utf8" }
     );
 
-    assert.match(output, /Validated 30 records/);
-    assert.match(output, /Validated 50 provider records/);
+    assert.match(output, /Validated 35 records/);
+    assert.match(output, /Validated 58 provider records/);
   });
 });

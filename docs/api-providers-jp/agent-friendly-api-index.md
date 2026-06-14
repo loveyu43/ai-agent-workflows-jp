@@ -1,6 +1,6 @@
 # AIエージェントと相性が良い日本企業API一覧
 
-最終確認日: 2026-06-03
+最終確認日: 2026-06-14
 
 MCPではなくても、公式APIがあるサービスはAIエージェント業務テンプレに向いています。ポイントは、AIに直接「実行」させるのではなく、読み取り、下書き、差分提案、実行前確認、監査ログの流れに分けることです。
 
@@ -12,11 +12,13 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 
 ## API候補
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に50件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
+機械可読カタログは `data/japan-agent-providers.jsonl` に58件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
 
 | API | 会社 | 業務テンプレ例 | 推奨モード | 公式情報 |
 | --- | --- | --- | --- | --- |
 | ラッコキーワード API / MCP | ラッコ株式会社 | SEOキーワード調査、検索意図分類、記事構成案 | 読み取り + 下書き | [MCPリリース](https://prtimes.jp/main/html/rd/p/000000066.000040858.html), [API接続案内](https://rakkokeyword.com/knowledge/10006/) |
+| Tips MCP | 株式会社オリノス | 有料記事下書き、販売履歴確認、購入記事活用 | 下書き + 承認付き実行 | [Tips MCP案内](https://tips.jp/u/tipsinfo/a/kLTRjyN2), [運営会社](https://tips.jp/company) |
+| microCMS MCP Server | 株式会社microCMS | お知らせ下書き、CMS差分確認、多言語化、メディア管理 | 下書き + 承認付き実行 | [microCMS MCP Server](https://document.microcms.io/mcp-server/microcms-mcp-server) |
 | freee API | フリー株式会社 | 月次締め、請求書下書き、取引レビュー | 承認付き実行 | [freee Developers](https://developer.freee.co.jp/) |
 | マネーフォワード クラウド API | 株式会社マネーフォワード | 仕訳確認、台帳検索、試算表レポート | 承認付き実行 | [開発者サイト](https://developers.biz.moneyforward.com/) |
 | kintone REST API | サイボウズ株式会社 | 案件更新案、顧客DB検索、承認フロー整理 | 承認付き実行 | [kintone REST API](https://cybozu.dev/ja/kintone/docs/rest-api/) |
@@ -27,6 +29,7 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | esa API v1 | 合同会社esa | 議事録、リリースノート、ナレッジ更新 | 下書き中心 | [esa API](https://docs.esa.io/posts/102) |
 | Backlog API | 株式会社ヌーラボ | 課題整理、コメント下書き、Wiki更新 | 下書き + 承認付き実行 | [Backlog API](https://developer.nulab.com/ja/docs/backlog/) |
 | LINE Messaging API | LINEヤフー株式会社 | 顧客対応、予約通知、公式アカウントbot | 承認付き実行 | [LINE Messaging API](https://developers.line.biz/ja/services/messaging-api/) |
+| LINE LIFF / LINE Login | LINEヤフー株式会社 | 会員証、予約フォーム、LINE内Webアプリ、ユーザー同意導線 | 承認付き実行 | [LIFF overview](https://developers.line.biz/en/docs/liff/overview/) |
 | BASE API | BASE株式会社 | 受注確認、商品情報同期、EC問い合わせ | 承認付き実行 | [BASE API](https://docs.thebase.in/api/) |
 | Qiita API v2 | Qiita株式会社 | 技術記事検索、Qiita Team文書、DevRel下書き | 読み取り + 下書き | [Qiita API v2](https://qiita.com/api/v2/docs) |
 | AgentClick MCP API | AgentClick | 案件検索、提携候補整理、リンク生成、成果レポート | 下書き + 承認付き実行 | [AgentClick](https://agentclick.ai/) |
@@ -35,6 +38,8 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 
 | API | 会社 | 業務テンプレ例 | 推奨モード | 公式情報 |
 | --- | --- | --- | --- | --- |
+| L Message (エルメ) | 株式会社ミショナ | LINE公式アカウント配信、予約、顧客管理、決済導線 | 承認付き実行 | [L Message](https://lme.jp/) |
+| エルグラム | 株式会社ミショナ | Instagram DM自動返信、コメント起点シナリオ、商品販売導線 | 承認付き実行 | [エルグラム](https://lgram.jp/), [Meta公式APIとは](https://lgram.jp/manual/meta_api/) |
 | 弥生 API | 弥生株式会社 | 請求・会計データ棚卸し、月次確認 | 承認付き実行 | [弥生 Developer](https://developer.yayoi-kk.co.jp/) |
 | MakeLeaps API | メイクリープス株式会社 | 見積・請求書下書き、取引先確認 | 承認付き実行 | [MakeLeaps Developers](https://developers.makeleaps.jp/) |
 | クラウドサイン Web API | 弁護士ドットコム株式会社 | 契約期限確認、署名状況棚卸し | 承認付き実行 | [クラウドサイン Developers](https://developers.cloudsign.jp/) |
@@ -54,6 +59,7 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | KING OF TIME Web API | 株式会社ヒューマンテクノロジーズ | 勤怠確認、締め前チェック | 承認付き実行 | [KING OF TIME API](https://developer.kingtime.jp/) |
 | ジョブカン API | 株式会社DONUTS | 勤怠・労務確認、承認前レビュー | 承認付き実行 | [ジョブカン API](https://ssl.jobcan.jp/docs/api/) |
 | HERP API | 株式会社HERP | 採用候補者整理、面接前ブリーフ | 下書き中心 | [HERP Developers](https://developers.herp.cloud/) |
+| kaonavi API v2 | 株式会社カオナビ | 従業員データ棚卸し、組織情報確認、人事マスター確認 | 承認付き実行 | [kaonavi API v2](https://developer.kaonavi.jp/api/v2.0/index.html) |
 | Mazrica API | 株式会社マツリカ | 商談整理、次アクション案、CRMレビュー | 下書き + 承認付き実行 | [Mazrica API](https://developer.mazrica.com/) |
 | KARTE API | 株式会社プレイド | 施策候補、顧客体験分析、セグメント確認 | 下書き + 承認付き実行 | [KARTE Developers](https://developers.karte.io/) |
 | スマレジ API | 株式会社スマレジ | POS売上確認、在庫・店舗運用レポート | 承認付き実行 | [スマレジ Developers](https://developers.smaregi.dev/) |
@@ -62,6 +68,8 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | DocBase API | 株式会社クレイ | ナレッジ検索、重複記事整理、社内文書下書き | 読み取り + 下書き | [DocBase API](https://help.docbase.io/posts/45703) |
 | ChatPlus API | チャットプラス株式会社 | 問い合わせ一次分類、返信案、FAQ改善 | 下書き + 承認付き実行 | [ChatPlus API](https://chatplus.jp/support/api/) |
 | オープンロジ API | 株式会社オープンロジ | 出荷確認、遅延候補抽出、顧客連絡下書き | 承認付き実行 | [オープンロジ API](https://docs.openlogi.com/) |
+| TimeRex Scheduling API | ミクステンド株式会社 | 商談・面談の日程調整、候補日提示、会議URL発行 | 承認付き実行 | [TimeRex Developer Portal](https://developers.timerex.net/api/) |
+| HENNGE One API | HENNGE株式会社 | ID棚卸し、アクセス権レビュー、セキュリティ運用確認 | 承認付き実行 | [HENNGE One API](https://developers.hennge.com/) |
 
 ## OSSに入れると便利な派生物
 

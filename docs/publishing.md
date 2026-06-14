@@ -49,6 +49,6 @@ Do not use a forked or unrelated repository subdirectory as the application link
 
 - Confirm the repository is public.
 - Confirm README renders clearly.
-- Create a `v0.1.0` release or tag.
+- Keep the latest package/changelog version aligned with a release or tag.
 - Add 1-3 GitHub Issues that show the maintenance roadmap.
 - Keep future commits active and scoped.

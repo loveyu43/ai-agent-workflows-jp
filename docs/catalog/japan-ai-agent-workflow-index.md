@@ -1,10 +1,10 @@
 # 日本企業 AIエージェント / MCP ワークフロー索引
 
-最終確認日: 2026-06-03
+最終確認日: 2026-06-14
 
 この索引は、日本企業が提供するMCP、AIエージェント基盤、またはAIエージェントから業務利用しやすいAPIを、業務テンプレートへ落とし込むための入口です。公式ページで確認できた情報を優先し、MCPではないAPIは「APIでエージェント化可能」として分けています。
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に50件あります。
+機械可読カタログは `data/japan-agent-providers.jsonl` に58件あります。
 
 ## 分類
 
@@ -25,6 +25,8 @@
 | Sansan株式会社 | Sansan AIエージェント / Sansan MCPサーバー | 公式MCP | 商談準備、接点検索、営業提案補助 | 名刺・接点情報の外部利用、営業文面送信 | [Sansanニュース](https://jp.corp-sansan.com/news/2025/1121_01.html) |
 | Sansan株式会社 | Contract One MCPサーバー | 公式MCP | 契約DB検索、契約レビュー前処理、社内基準ドラフト | 契約条件判断、取引先送付文面、法務完了扱い | [Sansanニュース](https://jp.corp-sansan.com/news/2026/0420.html) |
 | ラッコ株式会社 | ラッコキーワード MCP / API | MCP/API | SEO調査、検索意図分類、競合見出し分析、記事構成 | 有料クレジット消費、公開記事確定、広告文確定 | [プレスリリース](https://prtimes.jp/main/html/rd/p/000000066.000040858.html), [Claude Code接続](https://rakkokeyword.com/knowledge/9992/) |
+| 株式会社オリノス | Tips MCP | 公式MCP | 有料記事下書き、既存記事リライト、販売履歴分析、購入記事活用 | 有料記事公開、公開停止、価格変更、販売履歴共有 | [Tips MCP案内](https://tips.jp/u/tipsinfo/a/kLTRjyN2), [運営会社](https://tips.jp/company) |
+| 株式会社microCMS | microCMS MCP Server | MCP/API | CMS記事下書き、公開前差分確認、多言語化、メディア確認 | 公開、更新、削除、APIキー権限、メディア削除 | [microCMS MCP Server](https://document.microcms.io/mcp-server/microcms-mcp-server) |
 | AgentClick | AgentClick MCP API | MCP/API | 案件検索、リンク生成、成果レポート、アフィリエイト運用 | 提携申請、リンク公開、成果条件を含む記事公開 | [AgentClick](https://agentclick.ai/) |
 | NTTアドバンステクノロジ株式会社 | WinActor Manager on Cloud MCPサーバー | 公式MCP | RPA実行、既存社内システム操作、定型業務自動化 | RPAシナリオ実行、登録更新、定期実行設定 | [NTT-ATニュース](https://www.ntt-at.co.jp/news/2026/detail/release260205.html) |
 
@@ -42,6 +44,7 @@
 | 合同会社esa | esa API v1 | 議事録、リリースノート、ナレッジ更新 | WIP下書きから人間がShip Itする運用に合う | [esa API](https://docs.esa.io/posts/102) |
 | 株式会社ヌーラボ | Backlog API | 課題整理、コメント下書き、Wiki更新 | 課題・Wikiの更新前レビューが前提 | [Backlog API](https://developer.nulab.com/ja/docs/backlog/) |
 | LINEヤフー株式会社 | LINE Messaging API | 顧客対応、公式アカウント通知、チャットボット | ユーザー送信前の承認とログ保全が重要 | [LINE Developers](https://developers.line.biz/ja/services/messaging-api/) |
+| LINEヤフー株式会社 | LINE LIFF / LINE Login | LINE内Webアプリ、会員証、予約フォーム、プロフィール連携 | 取得データと送信操作の承認境界を明確にする | [LIFF overview](https://developers.line.biz/en/docs/liff/overview/) |
 | BASE株式会社 | BASE API | 受注確認、商品同期、EC問い合わせ対応 | 顧客情報・商品更新は高リスクとして扱う | [BASE API](https://docs.thebase.in/api/) |
 | Qiita株式会社 | Qiita API v2 | 技術記事検索、DevRel、Qiita Team文書 | 公開記事投稿は人間承認、検索・要約は低リスク | [Qiita API v2](https://qiita.com/api/v2/docs) |
 
@@ -49,6 +52,8 @@
 
 | 会社 | サービス | 主なワークフロー | エージェント化の向き | 公式情報 |
 | --- | --- | --- | --- | --- |
+| 株式会社ミショナ | L Message (エルメ) | LINE公式アカウント配信、予約、顧客管理、決済導線 | 標準機能の設定変更と外部送信は承認必須 | [L Message](https://lme.jp/) |
+| 株式会社ミショナ | エルグラム / L Message for Instagram | Instagram DM自動返信、コメント起点DM、商品販売導線 | 自動返信有効化と規約確認を分ける | [エルグラム](https://lgram.jp/), [Meta公式APIとは](https://lgram.jp/manual/meta_api/) |
 | 弥生株式会社 | 弥生 API | 会計・請求データ棚卸し、月次確認 | 会計更新は承認ゲート必須 | [弥生 Developer](https://developer.yayoi-kk.co.jp/) |
 | メイクリープス株式会社 | MakeLeaps API | 見積・請求書下書き、取引先確認 | 書類送信前レビュー向き | [MakeLeaps Developers](https://developers.makeleaps.jp/) |
 | 弁護士ドットコム株式会社 | クラウドサイン Web API | 契約期限確認、署名状況棚卸し | 契約送信や法的判断は人間が行う | [クラウドサイン Developers](https://developers.cloudsign.jp/) |
@@ -68,6 +73,7 @@
 | 株式会社ヒューマンテクノロジーズ | KING OF TIME Web API | 勤怠確認、締め前チェック | 勤怠修正や承認は人間判断 | [KING OF TIME API](https://developer.kingtime.jp/) |
 | 株式会社DONUTS | ジョブカン API | 勤怠・労務確認、承認前レビュー | 労務データ更新は高リスク | [ジョブカン API](https://ssl.jobcan.jp/docs/api/) |
 | 株式会社HERP | HERP API | 採用候補者整理、面接前ブリーフ | 合否判断や候補者連絡は人間承認 | [HERP Developers](https://developers.herp.cloud/) |
+| 株式会社カオナビ | kaonavi API v2 | 従業員データ棚卸し、組織情報確認、人事マスター確認 | 人事データ更新と評価判断は承認必須 | [kaonavi API v2](https://developer.kaonavi.jp/api/v2.0/index.html) |
 | 株式会社マツリカ | Mazrica API | 商談整理、次アクション案、CRMレビュー | CRM更新は差分確認付き | [Mazrica API](https://developer.mazrica.com/) |
 | 株式会社プレイド | KARTE API | 施策候補、顧客体験分析、セグメント確認 | 配信・セグメント変更は承認必須 | [KARTE Developers](https://developers.karte.io/) |
 | 株式会社スマレジ | スマレジ・プラットフォームAPI | POS売上確認、在庫・店舗運用レポート | 商品・在庫変更は高リスク | [スマレジ Developers](https://developers.smaregi.dev/) |
@@ -76,6 +82,8 @@
 | 株式会社クレイ | DocBase API | ナレッジ検索、重複記事整理、社内文書下書き | 削除や公開範囲変更は承認必須 | [DocBase API](https://help.docbase.io/posts/45703) |
 | チャットプラス株式会社 | ChatPlus API | 問い合わせ一次分類、返信案、FAQ改善 | 顧客返信送信は人間確認 | [ChatPlus API](https://chatplus.jp/support/api/) |
 | 株式会社オープンロジ | オープンロジ API | 出荷確認、遅延候補抽出、顧客連絡下書き | 出荷変更や顧客連絡は承認付き実行 | [オープンロジ API](https://docs.openlogi.com/) |
+| ミクステンド株式会社 | TimeRex Scheduling API | 商談・面談の日程調整、候補日提示、会議URL発行 | 外部参加者へのURL送信と予定確定は承認必須 | [TimeRex Developer Portal](https://developers.timerex.net/api/) |
+| HENNGE株式会社 | HENNGE One API / Access Control API | ID棚卸し、アクセス権レビュー、セキュリティ運用確認 | ユーザー・権限・セキュリティ設定変更は高リスク | [HENNGE One API](https://developers.hennge.com/) |
 
 ## AIエージェント基盤
 

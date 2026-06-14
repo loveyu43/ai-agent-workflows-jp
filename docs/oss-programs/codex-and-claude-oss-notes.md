@@ -1,6 +1,6 @@
 # Codex And Claude OSS Program Notes
 
-Last checked: 2026-06-03 JST
+Last checked: 2026-06-14 JST
 
 ## OpenAI Codex For Open Source
 
@@ -23,23 +23,24 @@ This repository should not claim automatic eligibility. It should claim:
 - It is a real OSS project with reusable artifacts.
 - It targets Japanese AI agent adoption and safety, which is under-served.
 - It has maintainable structure, a package CLI, GitHub Actions CI, tests, contribution rules, examples, and a public roadmap.
-- It has a public v0.1.0 release and issue-driven maintenance plan.
+- It has public releases, issue-driven maintenance, and fresh provider/catalog updates.
 - It needs public usage, issues, external contributions, and releases to become stronger for strict programs.
 
 ## Current Evidence To Cite
 
 - Public repository: https://github.com/loveyu43/ai-agent-workflows-jp
-- Release: https://github.com/loveyu43/ai-agent-workflows-jp/releases/tag/v0.1.0
-- Business templates: 23 Japanese workflow templates under `templates/business-ja/`
-- Provider catalog: 50 Japanese MCP/API provider records under `data/japan-agent-providers.jsonl`
-- Evaluation dataset: 30 Japanese AI-agent task records under `datasets/japanese-agent-evaluation-samples.jsonl`
+- Latest release page: https://github.com/loveyu43/ai-agent-workflows-jp/releases/tag/v0.1.3
+- Current package/changelog update: v0.1.4
+- Business templates: 28 Japanese workflow templates under `templates/business-ja/`
+- Provider catalog: 58 Japanese MCP/API provider records under `data/japan-agent-providers.jsonl`
+- Evaluation dataset: 35 Japanese AI-agent task records under `datasets/japanese-agent-evaluation-samples.jsonl`
 - Validation: `npm test` and `npm run validate`
 - CI: `.github/workflows/ci.yml`
 - Examples: `examples/`
 
 ## Suggested 500-Character OpenAI Answer
 
-Primary maintainer of AI Agent Workflows JP, a Japanese OSS template and validation project for safe AI-agent business workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, and Japanese APIs with human approval checkpoints. The repo includes 23 templates, 50 provider records, 30 evaluation records, examples, safety docs, CLI validation, CI, release, and roadmap issues.
+Primary maintainer of AI Agent Workflows JP, a Japanese OSS template and validation project for safe AI-agent business workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, and Japanese APIs with human approval checkpoints. The repo includes 28 templates, 58 provider records, 35 evaluation records, examples, safety docs, CLI validation, CI, release, and roadmap issues.
 
 ## Suggested API Credits Answer
 

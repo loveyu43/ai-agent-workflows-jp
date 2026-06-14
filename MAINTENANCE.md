@@ -27,10 +27,10 @@ Done when:
 
 ### Grow Evaluation Dataset
 
-Expand `datasets/japanese-agent-evaluation-samples.jsonl` from 10 to 30 practical Japanese tasks.
+Expand `datasets/japanese-agent-evaluation-samples.jsonl` from 10 to 35 practical Japanese tasks.
 
 Done when:
-- Dataset has 30 unique IDs.
+- Dataset has 35 unique IDs.
 - Each task has expected behavior and risk level.
 - `npm run validate:dataset` passes.
 
@@ -41,4 +41,4 @@ Prepare the project for the dedicated `loveyu43/ai-agent-workflows-jp` repositor
 Done when:
 - Release checklist exists.
 - Repository creation and first push steps are documented.
-- v0.1.0 tag/release guidance is clear.
+- current tag/release guidance is clear.

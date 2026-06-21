@@ -1,10 +1,10 @@
 # 日本企業 AIエージェント / MCP ワークフロー索引
 
-最終確認日: 2026-06-14
+最終確認日: 2026-06-21
 
 この索引は、日本企業が提供するMCP、AIエージェント基盤、またはAIエージェントから業務利用しやすいAPIを、業務テンプレートへ落とし込むための入口です。公式ページで確認できた情報を優先し、MCPではないAPIは「APIでエージェント化可能」として分けています。
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に58件あります。
+機械可読カタログは `data/japan-agent-providers.jsonl` に71件あります。
 
 ## 分類
 
@@ -27,6 +27,19 @@
 | ラッコ株式会社 | ラッコキーワード MCP / API | MCP/API | SEO調査、検索意図分類、競合見出し分析、記事構成 | 有料クレジット消費、公開記事確定、広告文確定 | [プレスリリース](https://prtimes.jp/main/html/rd/p/000000066.000040858.html), [Claude Code接続](https://rakkokeyword.com/knowledge/9992/) |
 | 株式会社オリノス | Tips MCP | 公式MCP | 有料記事下書き、既存記事リライト、販売履歴分析、購入記事活用 | 有料記事公開、公開停止、価格変更、販売履歴共有 | [Tips MCP案内](https://tips.jp/u/tipsinfo/a/kLTRjyN2), [運営会社](https://tips.jp/company) |
 | 株式会社microCMS | microCMS MCP Server | MCP/API | CMS記事下書き、公開前差分確認、多言語化、メディア確認 | 公開、更新、削除、APIキー権限、メディア削除 | [microCMS MCP Server](https://document.microcms.io/mcp-server/microcms-mcp-server) |
+| GMOグローバルサイン・ホールディングス株式会社 | 電子印鑑GMOサイン MCPサーバー | 公式MCP | 契約書送信前確認、署名状況確認、承認フロー整理 | 署名依頼送信、契約文書共有、承認フロー変更 | [GMOニュース](https://group.gmo/news/article/10056/) |
+| 株式会社SalesNow | SalesNow MCP | MCP/API | 企業調査、営業リスト案、採用・業界シグナル整理 | 企業データの外部共有、架電・メール送信 | [SalesNow MCP](https://salesnow.jp/mcp/) |
+| 株式会社ナレッジワーク | ナレッジワーク MCPサーバー | 公式MCP | 営業ナレッジ検索、商談記録活用、CRM/SFA連携準備 | 商談記録共有、CRM/SFA更新、顧客別提案送信 | [ナレッジワーク発表](https://knowledgework.com/news/article/PRBVrcCM) |
+| 株式会社オプロ | 帳票DX MCP | 公式MCP | 見積書、請求書、納品書の生成前チェック | 帳票確定、外部配信、金額・取引条件確定 | [帳票DX MCP](https://corp.opro.net/news/2026/05/formdx-mcp.html) |
+| 株式会社ハレックス | 気象データ MCPサーバー | MCP/API | 気象データ確認、物流・小売・イベントリスク分析 | 防災・運休・中止など重要判断、顧客通知 | [NTT DATAニュース](https://www.nttdata.com/global/ja/news/group/2026/033100/) |
+| GMOインターネット株式会社 | ConoHa VPS MCP Server | 公式MCP | VPS棚卸し、構成確認、保守作業案 | VPS作成・削除・停止・再起動、セキュリティ設定変更 | [ConoHa MCP](https://vps.conoha.jp/function/mcp/) |
+| フェンリル株式会社 | NILTO MCP | 公式MCP | CMS下書き、公開予約確認、コンテンツ差分レビュー | 公開、削除、公開予約変更、CMS権限変更 | [NILTO MCP setup](https://www.nilto.com/ja/help/usage/setup-claude) |
+| 株式会社RevComm | MiiTel MCP Server | 公式MCP | 通話要約、営業改善案、フォローアップ下書き | 通話録音共有、CRM/SFA更新、顧客評価確定 | [RevComm発表](https://www.revcomm.com/ja/news/pressrelease/20251223/) |
+| 株式会社Picaro.ai | Picaro.AI MCP / AIエージェント | MCP/API | Amazon広告分析、EC施策案、マーケットプレイス運用 | 広告予算・入札変更、施策実行、売上データ共有 | [Picaro.ai発表](https://prtimes.jp/main/html/rd/p/000000034.000116959.html) |
+| ウィブル証券株式会社 | Webull MCP Server / Agent Skills | MCP/API | 市場データ確認、非助言リサーチ、銘柄比較 | 注文・取消・訂正、投資助言、口座情報共有 | [Webull発表](https://prtimes.jp/main/html/rd/p/000000064.000131836.html) |
+| ブレインズテクノロジー株式会社 | Neuron ES MCPサーバー | 公式MCP | 社内横断検索、Copilot連携、ナレッジ探索 | 社内文書の外部共有、アクセス権限変更 | [Neuron ES MCP](https://prtimes.jp/main/html/rd/p/000000061.000014739.html) |
+| Stellagent株式会社 | Presso | 公式MCP | 広告・GA4横断レポート、施策案、マーケ接続基盤 | 広告予算・入札・配信設定変更、施策実行 | [Presso](https://presso.now/ja) |
+| 株式会社キャッチアップ | CuMcp for baserCMS | 公式MCP | 国産CMSのサイト更新、要約、リライト、投稿運用 | Webサイト公開・更新・削除、投稿スケジュール変更 | [キャッチアップ発表](https://catchup.co.jp/news/archives/255) |
 | AgentClick | AgentClick MCP API | MCP/API | 案件検索、リンク生成、成果レポート、アフィリエイト運用 | 提携申請、リンク公開、成果条件を含む記事公開 | [AgentClick](https://agentclick.ai/) |
 | NTTアドバンステクノロジ株式会社 | WinActor Manager on Cloud MCPサーバー | 公式MCP | RPA実行、既存社内システム操作、定型業務自動化 | RPAシナリオ実行、登録更新、定期実行設定 | [NTT-ATニュース](https://www.ntt-at.co.jp/news/2026/detail/release260205.html) |
 

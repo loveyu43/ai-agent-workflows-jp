@@ -36,7 +36,7 @@ If selected for OSS support, credits would be used for maintaining this reposito
 
 ## Current Coverage
 
-Snapshot for reviewers: **28 templates / 58 provider records / 35 eval samples**.
+Snapshot for reviewers: **34 templates / 71 provider records / 41 eval samples**.
 
 - XServer MCP Server / XServer CLI
 - freee-mcp
@@ -45,13 +45,14 @@ Snapshot for reviewers: **28 templates / 58 provider records / 35 eval samples**
 - Sansan / Contract One MCP Server notes
 - Rakko Keyword MCP / API and agent-friendly Japanese API catalog
 - Tips MCP, microCMS MCP, LINE LIFF, L Message, エルグラム, kaonavi, TimeRex, HENNGE One updates
+- GMO Sign MCP, SalesNow MCP, Knowledge Work MCP, 帳票DX MCP, Halex weather MCP, ConoHa VPS MCP, NILTO MCP, MiiTel MCP, Picaro.AI MCP, Webull MCP, Neuron ES MCP, Presso, CuMcp updates
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
-- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開の安全テンプレート
+- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開、企業調査、コールレビュー、金融調査の安全テンプレート
 - 学生、学生起業、初期スタートアップ向けの顧客検証、MVP/LP検証、GitHubポートフォリオレビュー
-- 実務向け日本語AIエージェント業務テンプレート 28件
-- 日本語AIエージェント評価データ 35件
-- 日本企業MCP/APIプロバイダーカタログ 58件
+- 実務向け日本語AIエージェント業務テンプレート 34件
+- 日本語AIエージェント評価データ 41件
+- 日本企業MCP/APIプロバイダーカタログ 71件
 
 ## Repository Map
 

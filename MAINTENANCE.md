@@ -27,10 +27,10 @@ Done when:
 
 ### Grow Evaluation Dataset
 
-Expand `datasets/japanese-agent-evaluation-samples.jsonl` from 10 to 35 practical Japanese tasks.
+Expand `datasets/japanese-agent-evaluation-samples.jsonl` from 10 to 41 practical Japanese tasks.
 
 Done when:
-- Dataset has 35 unique IDs.
+- Dataset has 41 unique IDs.
 - Each task has expected behavior and risk level.
 - `npm run validate:dataset` passes.
 

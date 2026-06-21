@@ -1,6 +1,6 @@
 # AIエージェントと相性が良い日本企業API一覧
 
-最終確認日: 2026-06-14
+最終確認日: 2026-06-21
 
 MCPではなくても、公式APIがあるサービスはAIエージェント業務テンプレに向いています。ポイントは、AIに直接「実行」させるのではなく、読み取り、下書き、差分提案、実行前確認、監査ログの流れに分けることです。
 
@@ -12,13 +12,18 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 
 ## API候補
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に58件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
+機械可読カタログは `data/japan-agent-providers.jsonl` に71件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
 
 | API | 会社 | 業務テンプレ例 | 推奨モード | 公式情報 |
 | --- | --- | --- | --- | --- |
 | ラッコキーワード API / MCP | ラッコ株式会社 | SEOキーワード調査、検索意図分類、記事構成案 | 読み取り + 下書き | [MCPリリース](https://prtimes.jp/main/html/rd/p/000000066.000040858.html), [API接続案内](https://rakkokeyword.com/knowledge/10006/) |
 | Tips MCP | 株式会社オリノス | 有料記事下書き、販売履歴確認、購入記事活用 | 下書き + 承認付き実行 | [Tips MCP案内](https://tips.jp/u/tipsinfo/a/kLTRjyN2), [運営会社](https://tips.jp/company) |
 | microCMS MCP Server | 株式会社microCMS | お知らせ下書き、CMS差分確認、多言語化、メディア管理 | 下書き + 承認付き実行 | [microCMS MCP Server](https://document.microcms.io/mcp-server/microcms-mcp-server) |
+| SalesNow MCP | 株式会社SalesNow | 企業調査、営業リスト案、採用・業界シグナル整理 | 読み取り + 下書き | [SalesNow MCP](https://salesnow.jp/mcp/), [発表](https://prtimes.jp/main/html/rd/p/000001379.000049221.html) |
+| GMOサイン MCP | GMOグローバルサイン・ホールディングス株式会社 | 契約書送信前確認、署名状況確認、承認フロー整理 | 承認付き実行 | [GMOニュース](https://group.gmo/news/article/10056/) |
+| 帳票DX MCP | 株式会社オプロ | 見積書、請求書、納品書の生成前チェック | 承認付き実行 | [帳票DX MCP](https://corp.opro.net/news/2026/05/formdx-mcp.html) |
+| ConoHa VPS MCP Server | GMOインターネット株式会社 | VPS棚卸し、構成確認、保守作業案 | 承認付き実行 | [ConoHa MCP](https://vps.conoha.jp/function/mcp/) |
+| NILTO MCP | フェンリル株式会社 | CMS下書き、公開予約確認、コンテンツ差分レビュー | 承認付き実行 | [NILTO MCP setup](https://www.nilto.com/ja/help/usage/setup-claude) |
 | freee API | フリー株式会社 | 月次締め、請求書下書き、取引レビュー | 承認付き実行 | [freee Developers](https://developer.freee.co.jp/) |
 | マネーフォワード クラウド API | 株式会社マネーフォワード | 仕訳確認、台帳検索、試算表レポート | 承認付き実行 | [開発者サイト](https://developers.biz.moneyforward.com/) |
 | kintone REST API | サイボウズ株式会社 | 案件更新案、顧客DB検索、承認フロー整理 | 承認付き実行 | [kintone REST API](https://cybozu.dev/ja/kintone/docs/rest-api/) |
@@ -33,6 +38,8 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | BASE API | BASE株式会社 | 受注確認、商品情報同期、EC問い合わせ | 承認付き実行 | [BASE API](https://docs.thebase.in/api/) |
 | Qiita API v2 | Qiita株式会社 | 技術記事検索、Qiita Team文書、DevRel下書き | 読み取り + 下書き | [Qiita API v2](https://qiita.com/api/v2/docs) |
 | AgentClick MCP API | AgentClick | 案件検索、提携候補整理、リンク生成、成果レポート | 下書き + 承認付き実行 | [AgentClick](https://agentclick.ai/) |
+| ハレックス 気象データMCP | 株式会社ハレックス | 気象データ確認、需要・物流・イベントリスク分析 | 読み取り + 承認付き実行 | [NTT DATAニュース](https://www.nttdata.com/global/ja/news/group/2026/033100/) |
+| ナレッジワーク MCPサーバー | 株式会社ナレッジワーク | 営業ナレッジ検索、商談記録活用、CRM/SFA連携準備 | 読み取り + 承認付き実行 | [ナレッジワーク発表](https://knowledgework.com/news/article/PRBVrcCM) |
 
 ## 追加API候補
 
@@ -70,6 +77,12 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | オープンロジ API | 株式会社オープンロジ | 出荷確認、遅延候補抽出、顧客連絡下書き | 承認付き実行 | [オープンロジ API](https://docs.openlogi.com/) |
 | TimeRex Scheduling API | ミクステンド株式会社 | 商談・面談の日程調整、候補日提示、会議URL発行 | 承認付き実行 | [TimeRex Developer Portal](https://developers.timerex.net/api/) |
 | HENNGE One API | HENNGE株式会社 | ID棚卸し、アクセス権レビュー、セキュリティ運用確認 | 承認付き実行 | [HENNGE One API](https://developers.hennge.com/) |
+| MiiTel MCP Server | 株式会社RevComm | 通話要約、営業改善案、フォローアップ下書き | 下書き + 承認付き実行 | [RevComm発表](https://www.revcomm.com/ja/news/pressrelease/20251223/) |
+| Picaro.AI MCP | 株式会社Picaro.ai | Amazon広告分析、EC施策案、マーケットプレイス運用 | 承認付き実行 | [Picaro.ai発表](https://prtimes.jp/main/html/rd/p/000000034.000116959.html) |
+| Webull MCP Server / Agent Skills | ウィブル証券株式会社 | 市場データ確認、非助言リサーチ、銘柄比較 | 読み取り中心 | [Webull発表](https://prtimes.jp/main/html/rd/p/000000064.000131836.html) |
+| Neuron ES MCPサーバー | ブレインズテクノロジー株式会社 | 社内横断検索、Copilot連携、ナレッジ探索 | 読み取り + 承認付き実行 | [Neuron ES MCP](https://prtimes.jp/main/html/rd/p/000000061.000014739.html) |
+| Presso | Stellagent株式会社 | 広告・GA4横断レポート、施策案、マーケ接続基盤 | 承認付き実行 | [Presso](https://presso.now/ja), [発表](https://prtimes.jp/main/html/rd/p/000000013.000131348.html) |
+| CuMcp for baserCMS | 株式会社キャッチアップ | 国産CMSのサイト更新、要約、リライト、投稿運用 | 承認付き実行 | [キャッチアップ発表](https://catchup.co.jp/news/archives/255) |
 
 ## OSSに入れると便利な派生物
 

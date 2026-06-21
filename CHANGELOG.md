@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5 - 2026-06-21
+
+- Added fresh domestic MCP research for GMO Sign MCP, SalesNow MCP, Knowledge Work MCP, 帳票DX MCP, Halex weather MCP, ConoHa VPS MCP, NILTO MCP, MiiTel MCP, Picaro.AI MCP, Webull MCP, Neuron ES MCP, Presso, and CuMcp.
+- Expanded Japanese MCP/API provider catalog from 58 to 71.
+- Added workflow templates for GMO Sign MCP contract operations, SalesNow company research, ConoHa VPS MCP server operations, NILTO CMS MCP publishing, MiiTel call review, and Webull market research safety.
+- Expanded Japanese agent evaluation samples from 35 to 41.
+- Updated README, roadmap, OSS application notes, API index, catalog docs, and validation count tests.
+
 ## 0.1.4 - 2026-06-14
 
 - Added fresh provider research for Tips MCP, microCMS MCP, LINE LIFF, L Message, エルグラム, kaonavi API, TimeRex Scheduling API, and HENNGE One API.

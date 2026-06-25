@@ -14,12 +14,12 @@ function listMarkdownFiles(directory) {
 }
 
 describe("public repository structure", () => {
-  it("contains at least 34 Japanese business workflow templates", () => {
+  it("contains at least 38 Japanese business workflow templates", () => {
     const templates = listMarkdownFiles("templates/business-ja");
 
     assert.ok(
-      templates.length >= 34,
-      `expected at least 34 business templates, found ${templates.length}`
+      templates.length >= 38,
+      `expected at least 38 business templates, found ${templates.length}`
     );
   });
 

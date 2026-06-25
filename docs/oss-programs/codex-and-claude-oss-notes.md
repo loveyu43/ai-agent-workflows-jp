@@ -1,6 +1,6 @@
 # Codex And Claude OSS Program Notes
 
-Last checked: 2026-06-21 JST
+Last checked: 2026-06-25 JST
 
 ## OpenAI Codex For Open Source
 
@@ -29,18 +29,18 @@ This repository should not claim automatic eligibility. It should claim:
 ## Current Evidence To Cite
 
 - Public repository: https://github.com/loveyu43/ai-agent-workflows-jp
-- Latest release page: https://github.com/loveyu43/ai-agent-workflows-jp/releases/tag/v0.1.3
-- Current package/changelog update: v0.1.5
-- Business templates: 34 Japanese workflow templates under `templates/business-ja/`
-- Provider catalog: 71 Japanese MCP/API provider records under `data/japan-agent-providers.jsonl`
-- Evaluation dataset: 41 Japanese AI-agent task records under `datasets/japanese-agent-evaluation-samples.jsonl`
+- Latest tag: https://github.com/loveyu43/ai-agent-workflows-jp/tree/v0.1.6
+- Current package/changelog update: v0.1.6
+- Business templates: 38 Japanese workflow templates under `templates/business-ja/`
+- Provider catalog: 81 Japanese MCP/API/OSS MCP provider records under `data/japan-agent-providers.jsonl`
+- Evaluation dataset: 46 Japanese AI-agent task records under `datasets/japanese-agent-evaluation-samples.jsonl`
 - Validation: `npm test` and `npm run validate`
 - CI: `.github/workflows/ci.yml`
 - Examples: `examples/`
 
 ## Suggested 500-Character OpenAI Answer
 
-Primary maintainer of AI Agent Workflows JP, a Japanese OSS template and validation project for safe AI-agent business workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, and Japanese APIs with human approval checkpoints. The repo includes 34 templates, 71 provider records, 41 evaluation records, examples, safety docs, CLI validation, CI, release, and roadmap issues.
+Primary maintainer of AI Agent Workflows JP, a Japanese OSS template and validation project for safe AI-agent business workflows. It helps non-engineers and small businesses use Codex, Claude Code, MCP tools, Japanese APIs, and OSS MCPs with human approval checkpoints. The repo includes 38 templates, 81 provider records, 46 evaluation records, examples, safety docs, CLI validation, CI, release, and roadmap issues.
 
 ## Suggested API Credits Answer
 

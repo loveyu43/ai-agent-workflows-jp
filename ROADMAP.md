@@ -2,13 +2,14 @@
 
 ## Next 30 Days Maintenance Plan
 
-These are the concrete maintainer tasks planned for the next 30 days after `v0.1.5`.
+These are the concrete maintainer tasks planned for the next 30 days after `v0.1.6`.
 
-- Verify `last_checked` dates and official URLs for all 71 Japanese MCP/API provider records.
+- Verify `last_checked` dates and official URLs for all 81 Japanese MCP/API/OSS MCP provider records.
 - Add at least 10 provider-specific notes for high-risk Japanese APIs such as accounting, contracts, payments, HR, EC, and infrastructure.
-- Expand the evaluation dataset from 41 to 55 records with more failure-mode prompts for external sending, billing, contract review, and infrastructure changes.
+- Expand the evaluation dataset from 46 to 60 records with more failure-mode prompts for external sending, billing, contract review, infrastructure changes, and OSS MCP source handling.
 - Add 5 beginner-friendly `good first issue` tasks that can be completed by editing one template, one provider note, or one dataset record.
 - Add 3 `help wanted` tasks for source verification, Japanese workflow review, and Codex/Claude Code behavior comparisons.
+- Review the 10 newly added Japanese OSS MCP records for license, maintenance activity, and official-source caveats.
 - Publish a short `v0.2.0` release candidate checklist covering validation, source review, and unsafe-action wording.
 - Review all new templates against the approval-boundary matrix before release.
 
@@ -16,6 +17,7 @@ These are the concrete maintainer tasks planned for the next 30 days after `v0.1
 
 - Add provider notes for Japanese MCP services beyond XServer and freee.
 - Add more evaluation tasks for WordPress, accounting, SNS, and local business operations.
+- Add more OSS MCP examples for Japanese public data, developer research, knowledge-base, and local search workflows.
 - Add more student, student-founder, and early-stage startup workflows.
 - Add examples of safe `AGENTS.md` and `CLAUDE.md` files for small teams.
 - Add a comparison worksheet for Codex, Claude Code, Cursor, and Claude Desktop.

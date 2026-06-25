@@ -36,7 +36,7 @@ If selected for OSS support, credits would be used for maintaining this reposito
 
 ## Current Coverage
 
-Snapshot for reviewers: **34 templates / 71 provider records / 41 eval samples**.
+Snapshot for reviewers: **38 templates / 81 provider records / 46 eval samples**.
 
 - XServer MCP Server / XServer CLI
 - freee-mcp
@@ -46,13 +46,14 @@ Snapshot for reviewers: **34 templates / 71 provider records / 41 eval samples**
 - Rakko Keyword MCP / API and agent-friendly Japanese API catalog
 - Tips MCP, microCMS MCP, LINE LIFF, L Message, エルグラム, kaonavi, TimeRex, HENNGE One updates
 - GMO Sign MCP, SalesNow MCP, Knowledge Work MCP, 帳票DX MCP, Halex weather MCP, ConoHa VPS MCP, NILTO MCP, MiiTel MCP, Picaro.AI MCP, Webull MCP, Neuron ES MCP, Presso, CuMcp updates
+- Japanese OSS MCP coverage for esa MCP Server, GROWI MCP Server, Kansei MCP Server, japan-ux-mcp, EDINET/TDNET/e-Stat/BOJ MCPs, Qiita Researcher MCP, and Gurume
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
-- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開、企業調査、コールレビュー、金融調査の安全テンプレート
+- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開、企業調査、コールレビュー、金融・統計調査、ナレッジ運用、DevRel、日本向けUXレビューの安全テンプレート
 - 学生、学生起業、初期スタートアップ向けの顧客検証、MVP/LP検証、GitHubポートフォリオレビュー
-- 実務向け日本語AIエージェント業務テンプレート 34件
-- 日本語AIエージェント評価データ 41件
-- 日本企業MCP/APIプロバイダーカタログ 71件
+- 実務向け日本語AIエージェント業務テンプレート 38件
+- 日本語AIエージェント評価データ 46件
+- 日本企業MCP/API/OSS MCPプロバイダーカタログ 81件
 
 ## Repository Map
 
@@ -66,6 +67,7 @@ docs/
   beginner/                  初心者向け解説
   catalog/                    日本企業MCP/API/AIエージェント索引
   mcp-providers-jp/           日本企業・日本語利用者向けMCP情報
+  oss-mcp-jp/                 日本語圏OSS MCP情報
   safety/                     承認境界とリスク整理
   usecases/                   業務ユースケース
   oss-programs/               OSS申請向けの整理
@@ -129,6 +131,7 @@ npx ai-agent-workflows-jp validate
 
 - [日本企業 AIエージェント / MCP ワークフロー索引](docs/catalog/japan-ai-agent-workflow-index.md)
 - [AIエージェントと相性が良い日本企業API一覧](docs/api-providers-jp/agent-friendly-api-index.md)
+- [日本語圏OSS MCP / AIエージェント連携カタログ](docs/oss-mcp-jp/japanese-open-source-mcp-index.md)
 - [AIエージェント業務承認境界マトリクス](docs/safety/approval-boundary-matrix.md)
 
 Machine-readable provider records live in [data/japan-agent-providers.jsonl](data/japan-agent-providers.jsonl).

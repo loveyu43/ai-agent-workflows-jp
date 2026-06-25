@@ -1,6 +1,6 @@
 # AIエージェントと相性が良い日本企業API一覧
 
-最終確認日: 2026-06-21
+最終確認日: 2026-06-25
 
 MCPではなくても、公式APIがあるサービスはAIエージェント業務テンプレに向いています。ポイントは、AIに直接「実行」させるのではなく、読み取り、下書き、差分提案、実行前確認、監査ログの流れに分けることです。
 
@@ -12,7 +12,7 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 
 ## API候補
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に71件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
+機械可読カタログは `data/japan-agent-providers.jsonl` に81件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
 
 | API | 会社 | 業務テンプレ例 | 推奨モード | 公式情報 |
 | --- | --- | --- | --- | --- |
@@ -40,6 +40,23 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 | AgentClick MCP API | AgentClick | 案件検索、提携候補整理、リンク生成、成果レポート | 下書き + 承認付き実行 | [AgentClick](https://agentclick.ai/) |
 | ハレックス 気象データMCP | 株式会社ハレックス | 気象データ確認、需要・物流・イベントリスク分析 | 読み取り + 承認付き実行 | [NTT DATAニュース](https://www.nttdata.com/global/ja/news/group/2026/033100/) |
 | ナレッジワーク MCPサーバー | 株式会社ナレッジワーク | 営業ナレッジ検索、商談記録活用、CRM/SFA連携準備 | 読み取り + 承認付き実行 | [ナレッジワーク発表](https://knowledgework.com/news/article/PRBVrcCM) |
+
+## 日本語圏OSS MCP候補
+
+OSS MCPは導入しやすい一方で、公式サービス利用規約、APIキー権限、メンテナンス状況を別途確認します。
+
+| OSS / MCP | 提供元 | 業務テンプレ例 | 推奨モード | 公式情報 |
+| --- | --- | --- | --- | --- |
+| esa MCP Server | 合同会社esa | 社内ナレッジ検索、WIP記事更新差分、リリースノート整理 | 下書き + 承認付き実行 | [GitHub](https://github.com/esaio/esa-mcp-server), [esa](https://esa.io/) |
+| GROWI MCP Server | GROWI Labs | Wiki検索、社内FAQ整理、ページ更新差分 | 下書き + 承認付き実行 | [GitHub](https://github.com/growilabs/growi-mcp-server), [GROWI](https://growi.org/) |
+| Kansei MCP Server | KanseiLink | 日本語SaaS/MCP探索、ワークフロールーティング、MCP候補比較 | 読み取り中心 | [GitHub](https://github.com/kansei-link/kansei-mcp-server) |
+| japan-ux-mcp | OSSコミュニティ | 日本向けLP、フォーム、敬語、法務表示、UI/UXレビュー | 読み取り + 下書き | [GitHub](https://github.com/mrslbt/japan-ux-mcp), [npm](https://www.npmjs.com/package/japan-ux-mcp) |
+| EDINET MCP | OSSコミュニティ | 有価証券報告書、XBRL、企業開示調査 | 読み取り中心 | [GitHub](https://github.com/ajtgjmdjp/edinet-mcp) |
+| TDNET Disclosure MCP | OSSコミュニティ | 適時開示、決算、配当、M&A、自己株買い調査 | 読み取り中心 | [GitHub](https://github.com/ajtgjmdjp/tdnet-disclosure-mcp) |
+| e-Stat MCP | OSSコミュニティ | 政府統計、地域分析、市場調査 | 読み取り中心 | [GitHub](https://github.com/ajtgjmdjp/estat-mcp), [e-Stat](https://www.e-stat.go.jp/) |
+| BOJ MCP | OSSコミュニティ | 日本銀行統計、マクロ経済レポート、金融系列調査 | 読み取り中心 | [GitHub](https://github.com/ajtgjmdjp/boj-mcp), [BOJ時系列統計](https://www.stat-search.boj.or.jp/) |
+| Qiita Researcher MCP | OSSコミュニティ | 技術記事調査、DevRel企画、社内勉強会資料案 | 読み取り + 下書き | [GitHub](https://github.com/AkashiShogo/mcp-server-qiita-researcher), [Qiita API](https://qiita.com/api/v2/docs) |
+| Gurume | OSSコミュニティ | 飲食店候補調査、出張・会食候補、地域飲食店リサーチ | 読み取り中心 | [GitHub](https://github.com/narumiruna/gurume), [Docs](https://narumiruna.github.io/gurume/) |
 
 ## 追加API候補
 

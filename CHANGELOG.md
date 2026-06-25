@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.6 - 2026-06-25
+
+- Added Japanese/open-source MCP coverage for esa MCP Server, GROWI MCP Server, Kansei MCP Server, japan-ux-mcp, EDINET MCP, TDNET Disclosure MCP, e-Stat MCP, BOJ MCP, Qiita Researcher MCP, and Gurume.
+- Expanded Japanese MCP/API provider catalog from 71 to 81.
+- Added workflow templates for knowledge-base MCP operations, Japanese public/financial data MCP research, Qiita/DevRel research, and Japanese UX review.
+- Expanded Japanese agent evaluation samples from 41 to 46.
+- Added a dedicated Japanese OSS MCP index and refreshed README, roadmap, OSS program notes, API index, catalog docs, and validation count tests.
+
 ## 0.1.5 - 2026-06-21
 
 - Added fresh domestic MCP research for GMO Sign MCP, SalesNow MCP, Knowledge Work MCP, 帳票DX MCP, Halex weather MCP, ConoHa VPS MCP, NILTO MCP, MiiTel MCP, Picaro.AI MCP, Webull MCP, Neuron ES MCP, Presso, and CuMcp.

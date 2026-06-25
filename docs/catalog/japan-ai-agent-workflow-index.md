@@ -1,10 +1,10 @@
 # 日本企業 AIエージェント / MCP ワークフロー索引
 
-最終確認日: 2026-06-21
+最終確認日: 2026-06-25
 
 この索引は、日本企業が提供するMCP、AIエージェント基盤、またはAIエージェントから業務利用しやすいAPIを、業務テンプレートへ落とし込むための入口です。公式ページで確認できた情報を優先し、MCPではないAPIは「APIでエージェント化可能」として分けています。
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に71件あります。
+機械可読カタログは `data/japan-agent-providers.jsonl` に81件あります。
 
 ## 分類
 
@@ -42,6 +42,21 @@
 | 株式会社キャッチアップ | CuMcp for baserCMS | 公式MCP | 国産CMSのサイト更新、要約、リライト、投稿運用 | Webサイト公開・更新・削除、投稿スケジュール変更 | [キャッチアップ発表](https://catchup.co.jp/news/archives/255) |
 | AgentClick | AgentClick MCP API | MCP/API | 案件検索、リンク生成、成果レポート、アフィリエイト運用 | 提携申請、リンク公開、成果条件を含む記事公開 | [AgentClick](https://agentclick.ai/) |
 | NTTアドバンステクノロジ株式会社 | WinActor Manager on Cloud MCPサーバー | 公式MCP | RPA実行、既存社内システム操作、定型業務自動化 | RPAシナリオ実行、登録更新、定期実行設定 | [NTT-ATニュース](https://www.ntt-at.co.jp/news/2026/detail/release260205.html) |
+
+## 日本語圏OSS MCP / コミュニティMCP
+
+| 提供元 | サービス | 分類 | 主なワークフロー | 人間承認が必要な操作 | 公式情報 |
+| --- | --- | --- | --- | --- | --- |
+| 合同会社esa | esa MCP Server | 公式OSS MCP | esa記事検索、WIP整理、更新差分、リリースノート | 記事作成・更新・Ship It・アーカイブ、添付ファイル共有 | [GitHub](https://github.com/esaio/esa-mcp-server) |
+| GROWI Labs | GROWI MCP Server | OSS MCP | Wiki検索、社内FAQ整理、ナレッジベース更新差分 | ページ作成・更新・削除、タグ・コメント・共有リンク変更 | [GitHub](https://github.com/growilabs/growi-mcp-server) |
+| KanseiLink | Kansei MCP Server | OSS MCP | 日本語SaaS/MCP探索、ワークフロー候補整理、MCPルーティング | 推奨MCPの本番接続、外部SaaS認証、APIキー投入 | [GitHub](https://github.com/kansei-link/kansei-mcp-server) |
+| OSSコミュニティ | japan-ux-mcp | OSS MCP | 日本向けUI/UX、フォーム、敬語、法務表示レビュー | 法務・医療・金融・採用表現の公開判断、本番リリース | [GitHub](https://github.com/mrslbt/japan-ux-mcp) |
+| OSSコミュニティ | EDINET MCP | OSS MCP | 有価証券報告書、XBRL、企業開示調査 | 投資助言、売買推奨、データ二次利用条件の判断 | [GitHub](https://github.com/ajtgjmdjp/edinet-mcp) |
+| OSSコミュニティ | TDNET Disclosure MCP | OSS MCP | 適時開示、決算、配当、M&A、自己株買い調査 | 投資助言、重要事実の断定、公式TDNET未照合の外部共有 | [GitHub](https://github.com/ajtgjmdjp/tdnet-disclosure-mcp) |
+| OSSコミュニティ | e-Stat MCP | OSS MCP | 政府統計、地域分析、市場調査、政策調査 | 統計解釈の断定、取得条件や時点を省いた公開 | [GitHub](https://github.com/ajtgjmdjp/estat-mcp) |
+| OSSコミュニティ | BOJ MCP | OSS MCP | 日本銀行統計、マクロ調査、金融系列レポート | 投資助言、金融政策解釈の断定、データ時点省略 | [GitHub](https://github.com/ajtgjmdjp/boj-mcp) |
+| OSSコミュニティ | Qiita Researcher MCP | OSS MCP | 技術記事調査、DevRel、社内勉強会資料案 | 記事・コメントの引用公開、Qiitaトークン設定、公式見解化 | [GitHub](https://github.com/AkashiShogo/mcp-server-qiita-researcher) |
+| OSSコミュニティ | Gurume | OSS MCP | 飲食店候補調査、出張・会食候補、地域飲食店リサーチ | 飲食店情報の商用利用・転載、大量取得、営業時間・予約可否の断定 | [GitHub](https://github.com/narumiruna/gurume) |
 
 ## APIでエージェント化可能
 

@@ -125,8 +125,22 @@ function runCli(argv) {
     return 1;
   }
 
-  const text = fs.readFileSync(catalogPath, "utf8");
-  const records = parseProviderJsonl(text);
+  let text;
+  try {
+    text = fs.readFileSync(catalogPath, "utf8");
+  } catch (error) {
+    console.error(`Error reading provider catalog ${catalogPath}: ${error.message}`);
+    return 1;
+  }
+
+  let records;
+  try {
+    records = parseProviderJsonl(text);
+  } catch (error) {
+    console.error(`Error parsing provider catalog ${catalogPath}: ${error.message}`);
+    return 1;
+  }
+
   const errors = validateProviderRecords(records);
 
   if (errors.length > 0) {

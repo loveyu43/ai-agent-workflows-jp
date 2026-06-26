@@ -25,7 +25,12 @@ function formatCounts(counts) {
 }
 
 function resolveProjectPath(filePath) {
-  return path.isAbsolute(filePath) ? filePath : path.join(projectRoot, filePath);
+  const resolved = path.isAbsolute(filePath) ? filePath : path.join(projectRoot, filePath);
+  const normalized = path.resolve(resolved);
+  if (!normalized.startsWith(projectRoot + path.sep) && normalized !== projectRoot) {
+    throw new Error(`Path must be inside the project root: ${filePath}`);
+  }
+  return normalized;
 }
 
 function printErrors(errors) {

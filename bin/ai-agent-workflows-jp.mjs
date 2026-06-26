@@ -4,34 +4,24 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   parseJsonl,
-  summarizeRecords,
-  validateRecords
+  formatCounts,
+  printErrors
+} from "../scripts/shared.mjs";
+import {
+  validateRecords,
+  summarizeRecords
 } from "../scripts/validate-dataset.mjs";
 import {
-  parseProviderJsonl,
-  summarizeProviderRecords,
-  validateProviderRecords
+  validateProviderRecords,
+  summarizeProviderRecords
 } from "../scripts/validate-provider-catalog.mjs";
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const defaultDatasetPath = "datasets/japanese-agent-evaluation-samples.jsonl";
 const defaultProviderPath = "data/japan-agent-providers.jsonl";
 
-function formatCounts(counts) {
-  return Object.entries(counts)
-    .sort(([left], [right]) => left.localeCompare(right))
-    .map(([key, value]) => `${key}: ${value}`)
-    .join(", ");
-}
-
 function resolveProjectPath(filePath) {
   return path.isAbsolute(filePath) ? filePath : path.join(projectRoot, filePath);
-}
-
-function printErrors(errors) {
-  for (const error of errors) {
-    console.error(`- ${error}`);
-  }
 }
 
 function validateDataset(filePath = defaultDatasetPath) {
@@ -53,7 +43,7 @@ function validateDataset(filePath = defaultDatasetPath) {
 
 function validateProviders(filePath = defaultProviderPath) {
   const text = fs.readFileSync(resolveProjectPath(filePath), "utf8");
-  const records = parseProviderJsonl(text);
+  const records = parseJsonl(text);
   const errors = validateProviderRecords(records);
 
   if (errors.length > 0) {

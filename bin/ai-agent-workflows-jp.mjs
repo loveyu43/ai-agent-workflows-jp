@@ -35,8 +35,23 @@ function printErrors(errors) {
 }
 
 function validateDataset(filePath = defaultDatasetPath) {
-  const text = fs.readFileSync(resolveProjectPath(filePath), "utf8");
-  const records = parseJsonl(text);
+  const resolved = resolveProjectPath(filePath);
+  let text;
+  try {
+    text = fs.readFileSync(resolved, "utf8");
+  } catch (error) {
+    console.error(`Error reading dataset file ${resolved}: ${error.message}`);
+    return 1;
+  }
+
+  let records;
+  try {
+    records = parseJsonl(text);
+  } catch (error) {
+    console.error(`Error parsing dataset file ${resolved}: ${error.message}`);
+    return 1;
+  }
+
   const errors = validateRecords(records);
 
   if (errors.length > 0) {
@@ -52,8 +67,23 @@ function validateDataset(filePath = defaultDatasetPath) {
 }
 
 function validateProviders(filePath = defaultProviderPath) {
-  const text = fs.readFileSync(resolveProjectPath(filePath), "utf8");
-  const records = parseProviderJsonl(text);
+  const resolved = resolveProjectPath(filePath);
+  let text;
+  try {
+    text = fs.readFileSync(resolved, "utf8");
+  } catch (error) {
+    console.error(`Error reading provider catalog ${resolved}: ${error.message}`);
+    return 1;
+  }
+
+  let records;
+  try {
+    records = parseProviderJsonl(text);
+  } catch (error) {
+    console.error(`Error parsing provider catalog ${resolved}: ${error.message}`);
+    return 1;
+  }
+
   const errors = validateProviderRecords(records);
 
   if (errors.length > 0) {

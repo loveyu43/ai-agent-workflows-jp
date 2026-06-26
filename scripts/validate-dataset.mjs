@@ -76,8 +76,22 @@ function runCli(argv) {
     return 1;
   }
 
-  const text = fs.readFileSync(datasetPath, "utf8");
-  const records = parseJsonl(text);
+  let text;
+  try {
+    text = fs.readFileSync(datasetPath, "utf8");
+  } catch (error) {
+    console.error(`Error reading dataset file ${datasetPath}: ${error.message}`);
+    return 1;
+  }
+
+  let records;
+  try {
+    records = parseJsonl(text);
+  } catch (error) {
+    console.error(`Error parsing dataset file ${datasetPath}: ${error.message}`);
+    return 1;
+  }
+
   const errors = validateRecords(records);
 
   if (errors.length > 0) {

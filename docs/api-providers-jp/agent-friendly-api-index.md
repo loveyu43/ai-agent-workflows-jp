@@ -1,6 +1,6 @@
 # AIエージェントと相性が良い日本企業API一覧
 
-最終確認日: 2026-06-25
+最終確認日: 2026-07-04
 
 MCPではなくても、公式APIがあるサービスはAIエージェント業務テンプレに向いています。ポイントは、AIに直接「実行」させるのではなく、読み取り、下書き、差分提案、実行前確認、監査ログの流れに分けることです。
 
@@ -12,7 +12,7 @@ MCPではなくても、公式APIがあるサービスはAIエージェント業
 
 ## API候補
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に81件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
+機械可読カタログは `data/japan-agent-providers.jsonl` に87件あります。このページでは、AIエージェント業務テンプレ化しやすい代表例と追加候補を一覧化します。
 
 | API | 会社 | 業務テンプレ例 | 推奨モード | 公式情報 |
 | --- | --- | --- | --- | --- |
@@ -57,6 +57,12 @@ OSS MCPは導入しやすい一方で、公式サービス利用規約、APIキ�
 | BOJ MCP | OSSコミュニティ | 日本銀行統計、マクロ経済レポート、金融系列調査 | 読み取り中心 | [GitHub](https://github.com/ajtgjmdjp/boj-mcp), [BOJ時系列統計](https://www.stat-search.boj.or.jp/) |
 | Qiita Researcher MCP | OSSコミュニティ | 技術記事調査、DevRel企画、社内勉強会資料案 | 読み取り + 下書き | [GitHub](https://github.com/AkashiShogo/mcp-server-qiita-researcher), [Qiita API](https://qiita.com/api/v2/docs) |
 | Gurume | OSSコミュニティ | 飲食店候補調査、出張・会食候補、地域飲食店リサーチ | 読み取り中心 | [GitHub](https://github.com/narumiruna/gurume), [Docs](https://narumiruna.github.io/gurume/) |
+| Backlog MCP Server | 株式会社ヌーラボ | 課題整理、Wiki更新案、コメント下書き、PR確認 | 下書き + 承認付き実行 | [GitHub](https://github.com/nulab/backlog-mcp-server), [Backlog](https://backlog.com/ja/) |
+| jpzip MCP Server | jpzip | 郵便番号検索、住所照合、ECフォーム確認、配送先候補 | 読み取り + 下書き | [GitHub](https://github.com/jpzip/mcp), [jpzip blog](https://jpzip.nadai.dev/en/blog/0003-mcp-server-japanese-postcode/) |
+| Japan Utils MCP | OSSコミュニティ | 和暦変換、祝日確認、かな変換、氏名分割、住所候補 | 読み取り + 下書き | [GitHub](https://github.com/vivek081166/japan-utils-mcp) |
+| Japan Seasons MCP | OSSコミュニティ | 桜・紅葉スポット調査、旅行企画、季節イベント候補 | 読み取り中心 | [GitHub](https://github.com/haomingkoo/japan-seasons-mcp) |
+| Kokai Data MCP | Kokai Data | 法人調査、補助金、官公需、法令、公開ビジネス情報 | 読み取り + 下書き | [GitHub](https://github.com/Kokai-Data/japan-business-data), [Kokai](https://kokai.ai/) |
+| Sakenowa MCP | OSSコミュニティ | 日本酒検索、風味比較、飲食・観光企画候補 | 読み取り中心 | [GitHub](https://github.com/mame0001/sakenowa-mcp), [Sakenowa](https://sakenowa.com/) |
 
 ## 追加API候補
 

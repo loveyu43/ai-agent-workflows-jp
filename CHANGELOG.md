@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.7 - 2026-07-04
+
+- Added fresh Japanese OSS/MCP coverage for Backlog MCP Server, jpzip MCP, Japan Utils MCP, Japan Seasons MCP, Kokai Data MCP, and Sakenowa MCP.
+- Expanded Japanese MCP/API/OSS MCP provider catalog from 81 to 87.
+- Added workflow templates for Backlog MCP project operations, Japanese locale/address utilities, Kokai public business intelligence, and Japan travel/food research MCPs.
+- Expanded Japanese agent evaluation samples from 46 to 52.
+- Refreshed README, roadmap, OSS application notes, API index, catalog docs, OSS MCP index, and validation count tests for the July 2026 update.
+
 ## 0.1.6 - 2026-06-25
 
 - Added Japanese/open-source MCP coverage for esa MCP Server, GROWI MCP Server, Kansei MCP Server, japan-ux-mcp, EDINET MCP, TDNET Disclosure MCP, e-Stat MCP, BOJ MCP, Qiita Researcher MCP, and Gurume.

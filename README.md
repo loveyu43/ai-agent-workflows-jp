@@ -36,7 +36,7 @@ If selected for OSS support, credits would be used for maintaining this reposito
 
 ## Current Coverage
 
-Snapshot for reviewers: **38 templates / 81 provider records / 46 eval samples**.
+Snapshot for reviewers: **42 templates / 87 provider records / 52 eval samples**.
 
 - XServer MCP Server / XServer CLI
 - freee-mcp
@@ -47,13 +47,14 @@ Snapshot for reviewers: **38 templates / 81 provider records / 46 eval samples**
 - Tips MCP, microCMS MCP, LINE LIFF, L Message, エルグラム, kaonavi, TimeRex, HENNGE One updates
 - GMO Sign MCP, SalesNow MCP, Knowledge Work MCP, 帳票DX MCP, Halex weather MCP, ConoHa VPS MCP, NILTO MCP, MiiTel MCP, Picaro.AI MCP, Webull MCP, Neuron ES MCP, Presso, CuMcp updates
 - Japanese OSS MCP coverage for esa MCP Server, GROWI MCP Server, Kansei MCP Server, japan-ux-mcp, EDINET/TDNET/e-Stat/BOJ MCPs, Qiita Researcher MCP, and Gurume
+- July OSS/MCP coverage for Backlog MCP Server, jpzip MCP, Japan Utils MCP, Japan Seasons MCP, Kokai Data MCP, and Sakenowa MCP
 - MCP初心者向け解説
 - Codex、Claude Code、Cursor、Claude Desktopの使い分け
-- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開、企業調査、コールレビュー、金融・統計調査、ナレッジ運用、DevRel、日本向けUXレビューの安全テンプレート
+- WordPress保守、バックオフィス、SNS運用、会計、労務、営業、契約、SEO、問い合わせ対応、コンテンツ販売、CMS公開、企業調査、コールレビュー、金融・統計調査、ナレッジ運用、DevRel、日本向けUXレビュー、プロジェクト管理、日本住所・ロケール、旅行・飲食調査の安全テンプレート
 - 学生、学生起業、初期スタートアップ向けの顧客検証、MVP/LP検証、GitHubポートフォリオレビュー
-- 実務向け日本語AIエージェント業務テンプレート 38件
-- 日本語AIエージェント評価データ 46件
-- 日本企業MCP/API/OSS MCPプロバイダーカタログ 81件
+- 実務向け日本語AIエージェント業務テンプレート 42件
+- 日本語AIエージェント評価データ 52件
+- 日本企業MCP/API/OSS MCPプロバイダーカタログ 87件
 
 ## Repository Map
 

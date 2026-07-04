@@ -1,6 +1,6 @@
 # 日本語圏OSS MCP / AIエージェント連携カタログ
 
-最終確認日: 2026-06-25
+最終確認日: 2026-07-04
 
 日本語業務で使いやすいOSS MCP、または日本のサービス・公開データと相性がよいOSS MCPをまとめます。MCPサーバー自体がOSSでも、接続先サービスの利用規約、APIキー権限、レート制限、データの二次利用条件は別途確認します。
 
@@ -24,6 +24,12 @@
 | `boj-mcp` | BOJ MCP | 日本銀行統計、マクロ調査、金融系列レポート | 投資助言や金融政策解釈の断定を避ける | [GitHub](https://github.com/ajtgjmdjp/boj-mcp) |
 | `qiita-researcher-mcp` | Qiita Researcher MCP | 技術記事調査、DevRel企画、社内勉強会資料案 | 記事・コメントの引用公開、トークン管理、公式見解化に注意 | [GitHub](https://github.com/AkashiShogo/mcp-server-qiita-researcher) |
 | `gurume-mcp` | Gurume | 飲食店候補調査、出張・会食候補、地域飲食店リサーチ | Tabelog規約、レート制限、営業時間や予約可否の断定に注意 | [GitHub](https://github.com/narumiruna/gurume) |
+| `backlog-mcp-server` | Backlog MCP Server | 課題整理、コメント下書き、Wiki更新案、Git/PR確認 | 課題・コメント・Wiki・プロジェクト設定の書き込みは人間承認 | [GitHub](https://github.com/nulab/backlog-mcp-server) |
+| `jpzip-mcp` | jpzip MCP Server | 郵便番号検索、住所照合、ECフォーム確認、配送先候補 | 顧客住所の自動更新、配送先確定、本人確認利用に注意 | [GitHub](https://github.com/jpzip/mcp) |
+| `japan-utils-mcp` | Japan Utils MCP | 和暦変換、祝日確認、かな変換、氏名分割、住所候補 | 氏名分割や暦情報を法的・労務上の確定判断に使わない | [GitHub](https://github.com/vivek081166/japan-utils-mcp) |
+| `japan-seasons-mcp` | Japan Seasons MCP | 桜・紅葉スポット調査、旅行企画、季節イベント候補 | 予約・購入・催行判断、営業時間・天候・開花予測の断定に注意 | [GitHub](https://github.com/haomingkoo/japan-seasons-mcp) |
+| `kokai-data-mcp` | Kokai Data / Japan Business Data MCP | 法人調査、補助金、官公需、法令、公開ビジネス情報 | 投資助言、士業判断、補助金申請・入札判断として断定しない | [GitHub](https://github.com/Kokai-Data/japan-business-data) |
+| `sakenowa-mcp` | Sakenowa MCP | 日本酒検索、風味比較、飲食・観光企画候補 | 酒類販売・提供・年齢確認、価格・在庫・度数の断定に注意 | [GitHub](https://github.com/mame0001/sakenowa-mcp) |
 
 ## テンプレート化した範囲
 
@@ -31,6 +37,10 @@
 - [日本金融・統計OSS MCP 調査](../../templates/business-ja/japan-finance-data-mcp-research-agent.md)
 - [Qiita Researcher MCP DevRel調査](../../templates/business-ja/qiita-researcher-devrel-agent.md)
 - [japan-ux-mcp 日本向けUIレビュー](../../templates/business-ja/japan-ux-mcp-review-agent.md)
+- [Backlog MCP プロジェクト運用](../../templates/business-ja/backlog-mcp-project-ops-agent.md)
+- [日本住所・ロケールMCP 業務確認](../../templates/business-ja/japan-locale-address-mcp-agent.md)
+- [Kokai Data MCP 公開ビジネス情報調査](../../templates/business-ja/kokai-public-business-data-mcp-agent.md)
+- [日本旅行・飲食OSS MCP 調査](../../templates/business-ja/japan-travel-food-mcp-research-agent.md)
 
 ## 追加調査メモ
 

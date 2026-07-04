@@ -1,10 +1,10 @@
 # 日本企業 AIエージェント / MCP ワークフロー索引
 
-最終確認日: 2026-06-25
+最終確認日: 2026-07-04
 
 この索引は、日本企業が提供するMCP、AIエージェント基盤、またはAIエージェントから業務利用しやすいAPIを、業務テンプレートへ落とし込むための入口です。公式ページで確認できた情報を優先し、MCPではないAPIは「APIでエージェント化可能」として分けています。
 
-機械可読カタログは `data/japan-agent-providers.jsonl` に81件あります。
+機械可読カタログは `data/japan-agent-providers.jsonl` に87件あります。
 
 ## 分類
 
@@ -42,6 +42,7 @@
 | 株式会社キャッチアップ | CuMcp for baserCMS | 公式MCP | 国産CMSのサイト更新、要約、リライト、投稿運用 | Webサイト公開・更新・削除、投稿スケジュール変更 | [キャッチアップ発表](https://catchup.co.jp/news/archives/255) |
 | AgentClick | AgentClick MCP API | MCP/API | 案件検索、リンク生成、成果レポート、アフィリエイト運用 | 提携申請、リンク公開、成果条件を含む記事公開 | [AgentClick](https://agentclick.ai/) |
 | NTTアドバンステクノロジ株式会社 | WinActor Manager on Cloud MCPサーバー | 公式MCP | RPA実行、既存社内システム操作、定型業務自動化 | RPAシナリオ実行、登録更新、定期実行設定 | [NTT-ATニュース](https://www.ntt-at.co.jp/news/2026/detail/release260205.html) |
+| 株式会社ヌーラボ | Backlog MCP Server | 公式OSS MCP | 課題整理、コメント下書き、Wiki更新案、Git/PR確認 | 課題・コメント・Wiki・プロジェクト設定の作成更新削除、APIキー/OAuth設定 | [GitHub](https://github.com/nulab/backlog-mcp-server) |
 
 ## 日本語圏OSS MCP / コミュニティMCP
 
@@ -57,6 +58,11 @@
 | OSSコミュニティ | BOJ MCP | OSS MCP | 日本銀行統計、マクロ調査、金融系列レポート | 投資助言、金融政策解釈の断定、データ時点省略 | [GitHub](https://github.com/ajtgjmdjp/boj-mcp) |
 | OSSコミュニティ | Qiita Researcher MCP | OSS MCP | 技術記事調査、DevRel、社内勉強会資料案 | 記事・コメントの引用公開、Qiitaトークン設定、公式見解化 | [GitHub](https://github.com/AkashiShogo/mcp-server-qiita-researcher) |
 | OSSコミュニティ | Gurume | OSS MCP | 飲食店候補調査、出張・会食候補、地域飲食店リサーチ | 飲食店情報の商用利用・転載、大量取得、営業時間・予約可否の断定 | [GitHub](https://github.com/narumiruna/gurume) |
+| jpzip | jpzip MCP Server | OSS MCP | 郵便番号検索、住所照合、ECフォーム確認、配送先候補 | 顧客住所の自動更新、配送先確定、本人確認利用 | [GitHub](https://github.com/jpzip/mcp) |
+| OSSコミュニティ | Japan Utils MCP | OSS MCP | 和暦変換、祝日確認、かな変換、氏名分割、住所候補 | 氏名分割の断定、契約・労務期限の確定、顧客マスター更新 | [GitHub](https://github.com/vivek081166/japan-utils-mcp) |
+| OSSコミュニティ | Japan Seasons MCP | OSS MCP | 桜・紅葉スポット調査、旅行企画、季節イベント候補 | 予約・購入・外部送信、開花予測や天候を根拠にした催行判断 | [GitHub](https://github.com/haomingkoo/japan-seasons-mcp) |
+| Kokai Data | Kokai Data / Japan Business Data MCP | OSS MCP | 法人調査、補助金、官公需、法令、公開ビジネス情報 | 投資助言、士業判断、補助金申請・入札判断、外部公開 | [GitHub](https://github.com/Kokai-Data/japan-business-data) |
+| OSSコミュニティ | Sakenowa MCP | OSS MCP | 日本酒検索、風味比較、飲食・観光企画候補 | 酒類販売・提供・年齢確認、価格・在庫・度数の断定 | [GitHub](https://github.com/mame0001/sakenowa-mcp) |
 
 ## APIでエージェント化可能
 

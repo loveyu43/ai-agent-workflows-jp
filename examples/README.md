@@ -6,6 +6,7 @@ These examples show how operators can use the templates without granting an AI a
 
 - [Chatwork support triage](chatwork-support-triage-example.md)
 - [MCP provider catalog validation](mcp-provider-catalog-validation-example.md)
+- [Check a pending run after reconnecting](pending-run-reconnect-example.md)
 - [WordPress maintenance read-only check](wordpress-maintenance-readonly-example.md)
 
 ## Operating Rule
